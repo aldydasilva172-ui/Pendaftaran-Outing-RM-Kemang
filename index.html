@@ -1,1 +1,1694 @@
-a
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Pendaftaran Outing RM Kemang</title>
+
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    body {
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      background:
+        linear-gradient(
+          135deg,
+          #f5f7f9 0%,
+          #eef1f4 100%
+        );
+
+      color: #222;
+    }
+
+
+    .page {
+      min-height: 100vh;
+
+      padding: 30px 15px;
+    }
+
+
+    .container {
+      width: 100%;
+
+      max-width: 520px;
+
+      margin: auto;
+    }
+
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    .header {
+      background: #ffffff;
+
+      border-radius: 24px 24px 0 0;
+
+      padding: 28px 25px;
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 18px;
+
+      box-shadow:
+        0 8px 25px rgba(0,0,0,0.06);
+    }
+
+
+    .logo-circle {
+      width: 62px;
+
+      height: 62px;
+
+      min-width: 62px;
+
+      border-radius: 50%;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      font-weight: 800;
+
+      font-size: 20px;
+
+      color: #ffffff;
+
+      background:
+        linear-gradient(
+          135deg,
+          #111111,
+          #3c3c3c
+        );
+    }
+
+
+    .small-title {
+      font-size: 11px;
+
+      font-weight: 700;
+
+      letter-spacing: 1.5px;
+
+      color: #777;
+
+      margin-bottom: 5px;
+    }
+
+
+    .header h1 {
+      font-size: 23px;
+
+      line-height: 1.2;
+
+      letter-spacing: 0.3px;
+    }
+
+
+    .header p {
+      margin-top: 7px;
+
+      font-size: 13px;
+
+      color: #777;
+    }
+
+
+    /* =========================
+       FORM
+    ========================= */
+
+    .form-card {
+      background: #ffffff;
+
+      padding:
+        28px 25px 30px;
+
+      box-shadow:
+        0 12px 35px rgba(0,0,0,0.07);
+    }
+
+
+    .form-group {
+      margin-bottom: 21px;
+    }
+
+
+    .form-group label {
+      display: block;
+
+      font-size: 14px;
+
+      font-weight: 700;
+
+      margin-bottom: 8px;
+
+      color: #303030;
+    }
+
+
+    .form-group label span {
+      color: #d71920;
+    }
+
+
+    input,
+    select {
+      width: 100%;
+
+      height: 49px;
+
+      border:
+        1px solid #dfe2e5;
+
+      border-radius: 12px;
+
+      padding: 0 15px;
+
+      font-size: 14px;
+
+      outline: none;
+
+      background: #ffffff;
+
+      transition:
+        border 0.2s,
+        box-shadow 0.2s;
+    }
+
+
+    input:focus,
+    select:focus {
+      border-color: #222;
+
+      box-shadow:
+        0 0 0 3px
+        rgba(0,0,0,0.06);
+    }
+
+
+    input::placeholder {
+      color: #a4a4a4;
+    }
+
+
+    input:disabled {
+      background: #f3f4f5;
+
+      color: #777;
+
+      cursor: not-allowed;
+    }
+
+
+    .select-wrapper {
+      position: relative;
+    }
+
+
+    .select-wrapper::after {
+      content: "⌄";
+
+      position: absolute;
+
+      right: 16px;
+
+      top: 12px;
+
+      font-size: 20px;
+
+      pointer-events: none;
+
+      color: #555;
+    }
+
+
+    .select-wrapper select {
+      appearance: none;
+
+      -webkit-appearance: none;
+
+      padding-right: 45px;
+
+      cursor: pointer;
+    }
+
+
+    small {
+      display: block;
+
+      margin-top: 7px;
+
+      color: #8b8b8b;
+
+      font-size: 11px;
+    }
+
+
+    /* =========================
+       BUTTON
+    ========================= */
+
+    .mockup-button,
+    .submit-button {
+      width: 100%;
+
+      height: 51px;
+
+      border: none;
+
+      border-radius: 12px;
+
+      cursor: pointer;
+
+      font-size: 14px;
+
+      font-weight: 700;
+
+      transition:
+        transform 0.15s,
+        opacity 0.2s;
+    }
+
+
+    .mockup-button:active,
+    .submit-button:active {
+      transform: scale(0.98);
+    }
+
+
+    .mockup-button {
+      background: #f2f3f4;
+
+      color: #222;
+
+      margin-bottom: 12px;
+    }
+
+
+    .mockup-button:hover {
+      background: #e8e9eb;
+    }
+
+
+    .shirt-icon {
+      margin-right: 6px;
+
+      font-size: 17px;
+    }
+
+
+    .submit-button {
+      background: #111111;
+
+      color: #ffffff;
+    }
+
+
+    .submit-button:hover {
+      background: #292929;
+    }
+
+
+    .submit-button:disabled {
+      opacity: 0.6;
+
+      cursor: not-allowed;
+    }
+
+
+    /* =========================
+       MESSAGE
+    ========================= */
+
+    .message {
+      margin-top: 15px;
+
+      padding: 12px;
+
+      border-radius: 10px;
+
+      font-size: 13px;
+
+      text-align: center;
+
+      display: none;
+    }
+
+
+    .message.success {
+      display: block;
+
+      background: #e9f8ef;
+
+      color: #16743a;
+    }
+
+
+    .message.error {
+      display: block;
+
+      background: #fff0f0;
+
+      color: #b42318;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    .footer {
+      background: #ffffff;
+
+      border-radius:
+        0 0 24px 24px;
+
+      padding: 20px;
+
+      text-align: center;
+
+      color: #999;
+
+      font-size: 11px;
+
+      line-height: 1.8;
+
+      box-shadow:
+        0 12px 35px rgba(0,0,0,0.07);
+    }
+
+
+    /* =========================
+       HIDDEN
+    ========================= */
+
+    .hidden {
+      display: none !important;
+    }
+
+
+    /* =========================
+       MODAL MOCKUP
+    ========================= */
+
+    .modal {
+      position: fixed;
+
+      inset: 0;
+
+      z-index: 9999;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      padding: 20px;
+    }
+
+
+    .modal-overlay {
+      position: absolute;
+
+      inset: 0;
+
+      background:
+        rgba(0,0,0,0.72);
+    }
+
+
+    .modal-content {
+      position: relative;
+
+      z-index: 2;
+
+      background: #ffffff;
+
+      width: 100%;
+
+      max-width: 500px;
+
+      max-height: 90vh;
+
+      overflow: auto;
+
+      border-radius: 20px;
+
+      padding: 22px;
+
+      animation:
+        modalShow 0.2s ease;
+    }
+
+
+    .modal-content h2 {
+      font-size: 19px;
+
+      margin-bottom: 15px;
+    }
+
+
+    .close-button {
+      position: absolute;
+
+      top: 12px;
+
+      right: 14px;
+
+      width: 35px;
+
+      height: 35px;
+
+      border: none;
+
+      border-radius: 50%;
+
+      background: #f1f1f1;
+
+      font-size: 24px;
+
+      cursor: pointer;
+
+      line-height: 30px;
+    }
+
+
+    .mockup-image-wrapper {
+      width: 100%;
+
+      border-radius: 12px;
+
+      overflow: hidden;
+
+      background: #f5f5f5;
+    }
+
+
+    .mockup-image-wrapper img {
+      display: block;
+
+      width: 100%;
+
+      height: auto;
+    }
+
+
+    @keyframes modalShow {
+
+      from {
+        opacity: 0;
+
+        transform:
+          translateY(15px)
+          scale(0.97);
+      }
+
+      to {
+        opacity: 1;
+
+        transform:
+          translateY(0)
+          scale(1);
+      }
+
+    }
+
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 480px) {
+
+      .page {
+        padding: 10px;
+      }
+
+
+      .header {
+        padding: 22px 18px;
+
+        gap: 13px;
+      }
+
+
+      .logo-circle {
+        width: 53px;
+
+        height: 53px;
+
+        min-width: 53px;
+
+        font-size: 17px;
+      }
+
+
+      .header h1 {
+        font-size: 19px;
+      }
+
+
+      .header p {
+        font-size: 11px;
+      }
+
+
+      .form-card {
+        padding:
+          25px 18px;
+      }
+
+
+      .footer {
+        padding: 17px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <div class="page">
+
+    <div class="container">
+
+
+      <!-- HEADER -->
+
+      <div class="header">
+
+        <div class="logo-circle">
+          RM
+        </div>
+
+
+        <div class="header-text">
+
+          <div class="small-title">
+            RANCH MARKET KEMANG
+          </div>
+
+
+          <h1>
+            PENDAFTARAN OUTING
+          </h1>
+
+
+          <p>
+            Silakan lengkapi data peserta outing
+          </p>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- FORM -->
+
+      <div class="form-card">
+
+        <form id="outingForm">
+
+
+          <!-- NAMA -->
+
+          <div class="form-group">
+
+            <label for="nama">
+
+              Nama Lengkap
+
+              <span>*</span>
+
+            </label>
+
+
+            <input
+              type="text"
+              id="nama"
+              name="nama"
+              placeholder="Masukkan nama lengkap"
+              autocomplete="name"
+              required
+            >
+
+          </div>
+
+
+
+          <!-- POSITION -->
+
+          <div class="form-group">
+
+            <label for="position">
+
+              Position
+
+              <span>*</span>
+
+            </label>
+
+
+            <div class="select-wrapper">
+
+              <select
+                id="position"
+                name="position"
+                required
+              >
+
+                <option value="">
+                  Pilih Position
+                </option>
+
+
+                <option value="Ranch Market">
+                  Ranch Market
+                </option>
+
+
+                <option value="SPG/SPM">
+                  SPG/SPM
+                </option>
+
+
+                <option value="Security">
+                  Security
+                </option>
+
+
+                <option value="Tenant">
+                  Tenant
+                </option>
+
+              </select>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- NIK -->
+
+          <div
+            class="form-group hidden"
+            id="nikGroup"
+          >
+
+            <label for="nik">
+
+              NIK / Identitas
+
+              <span>*</span>
+
+            </label>
+
+
+            <input
+              type="text"
+              id="nik"
+              name="nik"
+              placeholder="Masukkan NIK"
+              autocomplete="off"
+            >
+
+
+            <small id="nikInfo">
+              NIK wajib diisi untuk Ranch Market
+            </small>
+
+          </div>
+
+
+
+          <!-- KESEDIAAN -->
+
+          <div class="form-group">
+
+            <label for="ikut">
+
+              Bersedia Mengikuti Outing
+
+              <span>*</span>
+
+            </label>
+
+
+            <div class="select-wrapper">
+
+              <select
+                id="ikut"
+                name="ikut"
+                required
+              >
+
+                <option value="">
+                  Pilih Jawaban
+                </option>
+
+
+                <option value="Bersedia Ikut">
+                  Bersedia Ikut
+                </option>
+
+
+                <option value="Tidak Bersedia Ikut">
+                  Tidak Bersedia Ikut
+                </option>
+
+              </select>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- BIKIN BAJU -->
+
+          <div class="form-group">
+
+            <label for="bikinBaju">
+
+              Bikin Baju
+
+              <span>*</span>
+
+            </label>
+
+
+            <div class="select-wrapper">
+
+              <select
+                id="bikinBaju"
+                name="bikinBaju"
+                required
+              >
+
+                <option value="">
+                  Pilih Jawaban
+                </option>
+
+
+                <option value="Iya">
+                  Iya
+                </option>
+
+
+                <option value="Tidak">
+                  Tidak
+                </option>
+
+              </select>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- UKURAN BAJU -->
+
+          <div
+            class="form-group hidden"
+            id="ukuranGroup"
+          >
+
+            <label for="ukuranBaju">
+
+              Ukuran Baju
+
+              <span>*</span>
+
+            </label>
+
+
+            <div class="select-wrapper">
+
+              <select
+                id="ukuranBaju"
+                name="ukuranBaju"
+              >
+
+                <option value="">
+                  Pilih Ukuran
+                </option>
+
+
+                <option value="S">
+                  S
+                </option>
+
+
+                <option value="M">
+                  M
+                </option>
+
+
+                <option value="L">
+                  L
+                </option>
+
+
+                <option value="XL">
+                  XL
+                </option>
+
+
+                <option value="XXL">
+                  XXL
+                </option>
+
+
+                <option value="XXXL">
+                  XXXL
+                </option>
+
+              </select>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- MOCKUP -->
+
+          <button
+            type="button"
+            class="mockup-button"
+            id="mockupButton"
+          >
+
+            <span class="shirt-icon">
+              👕
+            </span>
+
+            Lihat Mockup Kaos
+
+          </button>
+
+
+
+          <!-- KIRIM -->
+
+          <button
+            type="submit"
+            class="submit-button"
+            id="submitButton"
+          >
+
+            <span id="submitText">
+              KIRIM DATA
+            </span>
+
+
+            <span
+              id="loading"
+              class="loading hidden"
+            >
+              Mengirim...
+            </span>
+
+          </button>
+
+
+          <div
+            id="message"
+            class="message"
+          ></div>
+
+
+        </form>
+
+      </div>
+
+
+
+      <!-- FOOTER -->
+
+      <div class="footer">
+
+        <p>
+          © 2026 Ranch Market Kemang
+        </p>
+
+
+        <p>
+          Data pendaftaran outing
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+
+  <!-- MODAL MOCKUP -->
+
+  <div
+    class="modal hidden"
+    id="mockupModal"
+  >
+
+    <div
+      class="modal-overlay"
+      id="modalOverlay"
+    ></div>
+
+
+    <div class="modal-content">
+
+
+      <button
+        type="button"
+        class="close-button"
+        id="closeModal"
+      >
+        ×
+      </button>
+
+
+      <h2>
+        Mockup Kaos
+      </h2>
+
+
+      <div class="mockup-image-wrapper">
+
+        <img
+          src="assets/mockup-kaos.jpg"
+          alt="Mockup Kaos Outing RM Kemang"
+        >
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+
+  <script>
+
+    // =================================================
+    // GOOGLE APPS SCRIPT
+    // GANTI URL DI BAWAH INI
+    // =================================================
+
+    const API_URL =
+      "MASUKKAN_URL_GOOGLE_APPS_SCRIPT_DI_SINI";
+
+
+
+    // =================================================
+    // ELEMENT
+    // =================================================
+
+    const form =
+      document.getElementById(
+        "outingForm"
+      );
+
+
+    const nama =
+      document.getElementById(
+        "nama"
+      );
+
+
+    const position =
+      document.getElementById(
+        "position"
+      );
+
+
+    const nik =
+      document.getElementById(
+        "nik"
+      );
+
+
+    const nikGroup =
+      document.getElementById(
+        "nikGroup"
+      );
+
+
+    const nikInfo =
+      document.getElementById(
+        "nikInfo"
+      );
+
+
+    const ikut =
+      document.getElementById(
+        "ikut"
+      );
+
+
+    const bikinBaju =
+      document.getElementById(
+        "bikinBaju"
+      );
+
+
+    const ukuranGroup =
+      document.getElementById(
+        "ukuranGroup"
+      );
+
+
+    const ukuranBaju =
+      document.getElementById(
+        "ukuranBaju"
+      );
+
+
+    const submitButton =
+      document.getElementById(
+        "submitButton"
+      );
+
+
+    const submitText =
+      document.getElementById(
+        "submitText"
+      );
+
+
+    const loading =
+      document.getElementById(
+        "loading"
+      );
+
+
+    const message =
+      document.getElementById(
+        "message"
+      );
+
+
+    const mockupButton =
+      document.getElementById(
+        "mockupButton"
+      );
+
+
+    const mockupModal =
+      document.getElementById(
+        "mockupModal"
+      );
+
+
+    const closeModal =
+      document.getElementById(
+        "closeModal"
+      );
+
+
+    const modalOverlay =
+      document.getElementById(
+        "modalOverlay"
+      );
+
+
+
+    // =================================================
+    // POSITION
+    // =================================================
+
+    position.addEventListener(
+      "change",
+      function () {
+
+        const value =
+          this.value;
+
+
+        if (
+          value ===
+          "Ranch Market"
+        ) {
+
+          // Ranch Market
+          // wajib isi NIK
+
+          nikGroup.classList.remove(
+            "hidden"
+          );
+
+
+          nik.disabled =
+            false;
+
+
+          nik.required =
+            true;
+
+
+          nik.value =
+            "";
+
+
+          nik.placeholder =
+            "Masukkan NIK Ranch Market";
+
+
+          nikInfo.textContent =
+            "NIK wajib diisi untuk Ranch Market";
+
+
+        }
+
+        else if (
+          value !== ""
+        ) {
+
+          // Selain Ranch Market
+          // otomatis isi sesuai position
+
+          nikGroup.classList.remove(
+            "hidden"
+          );
+
+
+          nik.disabled =
+            true;
+
+
+          nik.required =
+            false;
+
+
+          nik.value =
+            value;
+
+
+          nik.placeholder =
+            "Otomatis sesuai Position";
+
+
+          nikInfo.textContent =
+            "Identitas otomatis sesuai Position";
+
+
+        }
+
+        else {
+
+          nikGroup.classList.add(
+            "hidden"
+          );
+
+
+          nik.disabled =
+            false;
+
+
+          nik.required =
+            false;
+
+
+          nik.value =
+            "";
+
+        }
+
+      }
+    );
+
+
+
+    // =================================================
+    // BIKIN BAJU
+    // =================================================
+
+    bikinBaju.addEventListener(
+      "change",
+      function () {
+
+        const value =
+          this.value;
+
+
+        if (
+          value === "Iya"
+        ) {
+
+          ukuranGroup.classList.remove(
+            "hidden"
+          );
+
+
+          ukuranBaju.required =
+            true;
+
+        }
+
+        else {
+
+          ukuranGroup.classList.add(
+            "hidden"
+          );
+
+
+          ukuranBaju.required =
+            false;
+
+
+          ukuranBaju.value =
+            "";
+
+        }
+
+      }
+    );
+
+
+
+    // =================================================
+    // MOCKUP
+    // =================================================
+
+    mockupButton.addEventListener(
+      "click",
+      function () {
+
+        mockupModal.classList.remove(
+          "hidden"
+        );
+
+      }
+    );
+
+
+    closeModal.addEventListener(
+      "click",
+      function () {
+
+        mockupModal.classList.add(
+          "hidden"
+        );
+
+      }
+    );
+
+
+    modalOverlay.addEventListener(
+      "click",
+      function () {
+
+        mockupModal.classList.add(
+          "hidden"
+        );
+
+      }
+    );
+
+
+
+    // =================================================
+    // SUBMIT
+    // =================================================
+
+    form.addEventListener(
+      "submit",
+      async function (event) {
+
+        event.preventDefault();
+
+
+        clearMessage();
+
+
+
+        // Cek URL
+
+        if (
+          !API_URL ||
+          API_URL ===
+          "MASUKKAN_URL_GOOGLE_APPS_SCRIPT_DI_SINI"
+        ) {
+
+          showMessage(
+            "error",
+            "URL Google Apps Script belum dimasukkan."
+          );
+
+          return;
+
+        }
+
+
+
+        // Nama
+
+        if (
+          !nama.value.trim()
+        ) {
+
+          showMessage(
+            "error",
+            "Nama wajib diisi."
+          );
+
+          nama.focus();
+
+          return;
+
+        }
+
+
+
+        // Position
+
+        if (
+          !position.value
+        ) {
+
+          showMessage(
+            "error",
+            "Silakan pilih Position."
+          );
+
+          position.focus();
+
+          return;
+
+        }
+
+
+
+        // NIK
+
+        if (
+          position.value ===
+          "Ranch Market" &&
+          !nik.value.trim()
+        ) {
+
+          showMessage(
+            "error",
+            "NIK wajib diisi untuk Ranch Market."
+          );
+
+          nik.focus();
+
+          return;
+
+        }
+
+
+
+        // Bersedia
+
+        if (
+          !ikut.value
+        ) {
+
+          showMessage(
+            "error",
+            "Silakan pilih kesediaan mengikuti outing."
+          );
+
+          ikut.focus();
+
+          return;
+
+        }
+
+
+
+        // Bikin Baju
+
+        if (
+          !bikinBaju.value
+        ) {
+
+          showMessage(
+            "error",
+            "Silakan pilih Bikin Baju."
+          );
+
+          bikinBaju.focus();
+
+          return;
+
+        }
+
+
+
+        // Ukuran
+
+        if (
+          bikinBaju.value ===
+          "Iya" &&
+          !ukuranBaju.value
+        ) {
+
+          showMessage(
+            "error",
+            "Silakan pilih ukuran baju."
+          );
+
+          ukuranBaju.focus();
+
+          return;
+
+        }
+
+
+
+        // =================================================
+        // DATA
+        // =================================================
+
+        const data =
+          new URLSearchParams();
+
+
+        data.append(
+          "nama",
+          nama.value.trim()
+        );
+
+
+        data.append(
+          "position",
+          position.value
+        );
+
+
+        data.append(
+          "nik",
+          nik.value.trim()
+        );
+
+
+        data.append(
+          "ikut",
+          ikut.value
+        );
+
+
+        data.append(
+          "bikinBaju",
+          bikinBaju.value
+        );
+
+
+        data.append(
+          "ukuranBaju",
+          bikinBaju.value ===
+          "Tidak"
+            ? "Tidak"
+            : ukuranBaju.value
+        );
+
+
+
+        // =================================================
+        // LOADING
+        // =================================================
+
+        submitButton.disabled =
+          true;
+
+
+        submitText.classList.add(
+          "hidden"
+        );
+
+
+        loading.classList.remove(
+          "hidden"
+        );
+
+
+
+        try {
+
+          await fetch(
+            API_URL,
+            {
+
+              method: "POST",
+
+              mode: "no-cors",
+
+              headers: {
+                "Content-Type":
+                  "application/x-www-form-urlencoded"
+              },
+
+              body:
+                data.toString()
+
+            }
+          );
+
+
+          showMessage(
+            "success",
+            "✓ Data berhasil dikirim. Terima kasih sudah mendaftar!"
+          );
+
+
+          // Reset
+
+          form.reset();
+
+
+          nikGroup.classList.add(
+            "hidden"
+          );
+
+
+          nik.disabled =
+            false;
+
+
+          nik.required =
+            false;
+
+
+          ukuranGroup.classList.add(
+            "hidden"
+          );
+
+
+          ukuranBaju.required =
+            false;
+
+
+
+        }
+
+        catch (error) {
+
+          console.error(
+            error
+          );
+
+
+          showMessage(
+            "error",
+            "Data gagal dikirim. Silakan coba lagi."
+          );
+
+        }
+
+
+
+        submitButton.disabled =
+          false;
+
+
+        submitText.classList.remove(
+          "hidden"
+        );
+
+
+        loading.classList.add(
+          "hidden"
+        );
+
+      }
+    );
+
+
+
+    // =================================================
+    // MESSAGE
+    // =================================================
+
+    function showMessage(
+      type,
+      text
+    ) {
+
+      message.className =
+        "message " + type;
+
+
+      message.textContent =
+        text;
+
+    }
+
+
+    function clearMessage() {
+
+      message.className =
+        "message";
+
+
+      message.textContent =
+        "";
+
+    }
+
+  </script>
+
+
+</body>
+
+</html>
