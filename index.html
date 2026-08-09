@@ -1,2133 +1,2122 @@
-<!DOCTYPE html>
-<html lang="id">
-
-<head>
-
-  <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-
-  <title>Pendaftaran Outing RM Kemang</title>
-
-
-  <style>
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-
-    /* =================================================
-       BODY - BACKGROUND FOTO FULL
-    ================================================= */
-
-    body {
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
-      min-height: 100vh;
-
-      color: #222;
-
-      background-image:
-        linear-gradient(
-          rgba(0, 0, 0, 0.08),
-          rgba(0, 0, 0, 0.08)
-        ),
-        url("IMG-20260809-WA0001.jpg");
-
-      background-size: cover;
-
-      background-position: center center;
-
-      background-repeat: no-repeat;
-
-      background-attachment: fixed;
-
-    }
-
-
-    /* =================================================
-       PAGE
-    ================================================= */
-
-    .page {
-
-      min-height: 100vh;
-
-      padding:
-        30px 15px;
-
-      display: flex;
-
-      justify-content: center;
-
-    }
-
-
-    .container {
-
-      width: 100%;
-
-      max-width: 520px;
-
-      margin: auto;
-
-    }
-
-
-    /* =================================================
-       SATU KACA BESAR
-       HEADER + FORM + FOOTER MENYATU
-    ================================================= */
-
-    .glass-container {
-
-      width: 100%;
-
-      background:
-        rgba(255, 255, 255, 0.08);
-
-      backdrop-filter:
-        blur(3px);
-
-      -webkit-backdrop-filter:
-        blur(3px);
-
-      border:
-        1px solid
-        rgba(255, 255, 255, 0.30);
-
-      border-radius:
-        28px;
-
-      overflow:
-        hidden;
-
-      box-shadow:
-
-        0 20px 50px
-        rgba(0, 0, 0, 0.18),
-
-        inset 0 1px 0
-        rgba(255, 255, 255, 0.35);
-
-    }
-
-
-    /* =================================================
-       HEADER
-    ================================================= */
-
-    .header {
-
-      padding:
-        22px;
-
-      display:
-        flex;
-
-      align-items:
-        center;
-
-      gap:
-        15px;
-
-      background:
-        transparent;
-
-      border:
-        none;
-
-      border-bottom:
-        1px solid
-        rgba(255, 255, 255, 0.18);
-
-    }
-
-
-    .logo-circle {
-
-      width:
-        65px;
-
-      height:
-        65px;
-
-      min-width:
-        65px;
-
-      border-radius:
-        50%;
-
-      overflow:
-        hidden;
-
-      background:
-        rgba(255, 255, 255, 0.18);
-
-      border:
-        1px solid
-        rgba(255, 255, 255, 0.35);
-
-      box-shadow:
-        0 4px 15px
-        rgba(0, 0, 0, 0.12);
-
-    }
-
-
-    .logo-circle img {
-
-      width:
-        100%;
-
-      height:
-        100%;
-
-      object-fit:
-        contain;
-
-      border-radius:
-        50%;
-
-      display:
-        block;
-
-    }
-
-
-    .header-text {
-
-      flex:
-        1;
-
-    }
-
-
-    .small-title {
-
-      font-size:
-        11px;
-
-      font-weight:
-        700;
-
-      letter-spacing:
-        1.5px;
-
-      color:
-        #000;
-
-      margin-bottom:
-        5px;
-
-    }
-
-
-    .header h1 {
-
-      font-size:
-        23px;
-
-      line-height:
-        1.2;
-
-      letter-spacing:
-        0.3px;
-      text-align:
-        center;
-
-      color:
-        #000;
-
-    }
-
-
-    .header p {
-
-      margin-top:
-        7px;
-
-      font-size:
-        13px;
-      text-align:
-        center;
-
-      color:
-        #000;
-
-    }
-
-
-    /* =================================================
-       FORM
-    ================================================= */
-
-    .form-card {
-
-      padding:
-        25px 22px;
-
-      background:
-        transparent;
-
-      border:
-        none;
-
-      box-shadow:
-        none;
-
-    }
-
-
-    .form-group {
-
-      margin-bottom:
-        21px;
-
-    }
-
-
-    .form-group label {
-
-      display:
-        block;
-
-      font-size:
-        14px;
-
-      font-weigh.form-group label {
-  display: block;
-
-  font-size: 14px;
-
-  font-weight: 700;
-
-  margin-bottom: 8px;
-
-  color: #222;
-
-  text-shadow:
+<!DOCTYPE html>  
+<html lang="id">  
+  
+<head>  
+  
+  <meta charset="UTF-8">  
+  
+  <meta  
+    name="viewport"  
+    content="width=device-width, initial-scale=1.0"  
+  >  
+  
+  <title>Pendaftaran Outing RM Kemang</title>  
+  
+  
+  <style>  
+  
+    * {  
+      box-sizing: border-box;  
+      margin: 0;  
+      padding: 0;  
+    }  
+  
+  
+    /* =================================================  
+       BODY - BACKGROUND FOTO FULL  
+    ================================================= */  
+  
+    body {  
+  
+      font-family:  
+        Arial,  
+        Helvetica,  
+        sans-serif;  
+  
+      min-height: 100vh;  
+  
+      color: #222;  
+  
+      background-image:  
+        linear-gradient(  
+          rgba(0, 0, 0, 0.08),  
+          rgba(0, 0, 0, 0.08)  
+        ),  
+        url("IMG-20260809-WA0001.jpg");  
+  
+      background-size: cover;  
+  
+      background-position: center center;  
+  
+      background-repeat: no-repeat;  
+  
+      background-attachment: fixed;  
+  
+    }  
+  
+  
+    /* =================================================  
+       PAGE  
+    ================================================= */  
+  
+    .page {  
+  
+      min-height: 100vh;  
+  
+      padding:  
+        30px 15px;  
+  
+      display: flex;  
+  
+      justify-content: center;  
+  
+    }  
+  
+  
+    .container {  
+  
+      width: 100%;  
+  
+      max-width: 520px;  
+  
+      margin: auto;  
+  
+    }  
+  
+  
+    /* =================================================  
+       SATU KACA BESAR  
+       HEADER + FORM + FOOTER MENYATU  
+    ================================================= */  
+  
+    .glass-container {  
+  
+      width: 100%;  
+  
+      background:  
+        rgba(255, 255, 255, 0.08);  
+  
+      backdrop-filter:  
+        blur(3px);  
+  
+      -webkit-backdrop-filter:  
+        blur(3px);  
+  
+      border:  
+        1px solid  
+        rgba(255, 255, 255, 0.30);  
+  
+      border-radius:  
+        28px;  
+  
+      overflow:  
+        hidden;  
+  
+      box-shadow:  
+  
+        0 20px 50px  
+        rgba(0, 0, 0, 0.18),  
+  
+        inset 0 1px 0  
+        rgba(255, 255, 255, 0.35);  
+  
+    }  
+  
+  
+    /* =================================================  
+       HEADER  
+    ================================================= */  
+  
+    .header {  
+  
+      padding:  
+        22px;  
+  
+      display:  
+        flex;  
+  
+      align-items:  
+        center;  
+  
+      gap:  
+        15px;  
+  
+      background:  
+        transparent;  
+  
+      border:  
+        none;  
+  
+      border-bottom:  
+        1px solid  
+        rgba(255, 255, 255, 0.18);  
+  
+    }  
+  
+  
+    .logo-circle {  
+  
+      width:  
+        65px;  
+  
+      height:  
+        65px;  
+  
+      min-width:  
+        65px;  
+  
+      border-radius:  
+        50%;  
+  
+      overflow:  
+        hidden;  
+  
+      background:  
+        rgba(255, 255, 255, 0.18);  
+  
+      border:  
+        1px solid  
+        rgba(255, 255, 255, 0.35);  
+  
+      box-shadow:  
+        0 4px 15px  
+        rgba(0, 0, 0, 0.12);  
+  
+    }  
+  
+  
+    .logo-circle img {  
+  
+      width:  
+        100%;  
+  
+      height:  
+        100%;  
+  
+      object-fit:  
+        contain;  
+  
+      border-radius:  
+        50%;  
+  
+      displ
+      font-size:  
+        11px;  
+  
+      font-weight:  
+        700;  
+  
+      letter-spacing:  
+        1.5px;  
+  
+      color:  
+        #000;  
+  
+      margin-bottom:  
+        5px;  
+  
+    }  
+  
+  
+    .header h1 {  
+  
+      font-size:  
+        23px;  
+  
+      line-height:  
+        1.2;  
+  
+      letter-spacing:  
+        0.3px;  
+  text-align:  
+        center;  
+  
+      color:  
+        #000;  
+  
+    }  
+  
+  
+    .header p {  
+  
+      margin-top:  
+        7px;  
+  
+      font-size:  
+        13px;  
+  text-align:  
+        center;  
+  e:  
+        13px;  
+  text-align:  
+        center;  
+    
+  
+      color:  
+        #000;  
+  
+    }  
+  
+  
+    /* =================================================  
+       FORM  
+    ================================================= */  
+  
+    .form-card {  
+  
+      padding:  
+        25px 22px;  
+  
+      background:  
+        transparent;  
+  
+      border:  
+        none;  
+  
+      box-shadow:  
+        none;  
+  
+    }  
+  
+  
+    .form-group {  
+  
+      margin-bottom:  
+        21px;  
+  
+    }  
+  
+  
+    .form-group label {  
+  
+      display:  
+        block;  
+  
+      font-size:  
+        14px;  
+  
+      font-weight:  
+        700;  
+  
+      margin-bottom:  
+        8px;  
+  
+      color:  
+        #252525;  
+   text-shadow:
     -1px -1px 0 rgba(255,255,255,0.95),
      1px -1px 0 rgba(255,255,255,0.95),
     -1px  1px 0 rgba(255,255,255,0.95),
      1px  1px 0 rgba(255,255,255,0.95),
      0 2px 5px rgba(255,255,255,0.6);
-}
-
-    .form-group label span {
-
-      color:
-        #d71920;
-
-    }
-
-
-    /* =================================================
-       INPUT & SELECT
-    ================================================= */
-
-    input,
-    select {
-
-      width:
-        100%;
-
-      height:
-        49px;
-
-      border:
-        1px solid
-        rgba(0, 0, 0, 0.12);
-
-      border-radius:
-        12px;
-
-      padding:
-        0 15px;
-
-      font-size:
-        14px;
-
-      outline:
-        none;
-
-      background:
-        rgba(255, 255, 255, 0.72);
-
-      color:
-        #222;
-
-      transition:
-        border 0.2s,
-        box-shadow 0.2s,
-        background 0.2s;
-
-    }
-
-
-    input:focus,
-    select:focus {
-
-      border-color:
-        #222;
-
-      background:
-        rgba(255, 255, 255, 0.90);
-
-      box-shadow:
-        0 0 0 3px
-        rgba(0, 0, 0, 0.08);
-
-    }
-
-
-    input::placeholder {
-
-      color:
-        #999;
-
-    }
-
-
-    input:disabled {
-
-      background:
-        rgba(235, 235, 235, 0.70);
-
-      color:
-        #777;
-
-      cursor:
-        not-allowed;
-
-    }
-
-
-    .select-wrapper {
-
-      position:
-        relative;
-
-    }
-
-
-    .select-wrapper::after {
-
-      content:
-        "⌄";
-
-      position:
-        absolute;
-
-      right:
-        16px;
-
-      top:
-        12px;
-
-      font-size:
-        20px;
-
-      pointer-events:
-        none;
-
-      color:
-        #555;
-
-    }
-
-
-    .select-wrapper select {
-
-      appearance:
-        none;
-
-      -webkit-appearance:
-        none;
-
-      padding-right:
-        45px;
-
-      cursor:
-        pointer;
-
-    }
-
-
-    small {
-
-      display:
-        block;
-
-      margin-top:
-        7px;
-
-      color:
-        #666;
-
-      font-size:
-        11px;
-
-    }
-
-
-    /* =================================================
-       BUTTON
-    ================================================= */
-
-    .mockup-button,
-    .submit-button {
-
-      width:
-        100%;
-
-      height:
-        51px;
-
-      border:
-        none;
-
-      border-radius:
-        12px;
-
-      cursor:
-        pointer;
-
-      font-size:
-        14px;
-
-      font-weight:
-        700;
-
-      transition:
-        transform 0.15s,
-        opacity 0.2s,
-        background 0.2s;
-
-    }
-
-
-    .mockup-button:active,
-    .submit-button:active {
-
-      transform:
-        scale(0.98);
-
-    }
-
-
-    .mockup-button {
-
-      background:
-        rgba(255, 255, 255, 0.50);
-
-      color:
-        #222;
-
-      margin-bottom:
-        12px;
-
-      border:
-        1px solid
-        rgba(0, 0, 0, 0.08);
-
-      backdrop-filter:
-        blur(8px);
-
-      -webkit-backdrop-filter:
-        blur(8px);
-
-    }
-
-
-    .mockup-button:hover {
-
-      background:
-        rgba(255, 255, 255, 0.75);
-
-    }
-
-
-    .shirt-icon {
-
-      margin-right:
-        6px;
-
-      font-size:
-        17px;
-
-    }
-
-
-    .submit-button {
-
-      background:
-        rgba(17, 17, 17, 0.94);
-
-      color:
-        #ffffff;
-
-      box-shadow:
-        0 6px 15px
-        rgba(0, 0, 0, 0.18);
-
-    }
-
-
-    .submit-button:hover {
-
-      background:
-        #292929;
-
-    }
-
-
-    .submit-button:disabled {
-
-      opacity:
-        0.6;
-
-      cursor:
-        not-allowed;
-
-    }
-
-
-    /* =================================================
-       MESSAGE
-    ================================================= */
-
-    .message {
-
-      margin-top:
-        15px;
-
-      padding:
-        12px;
-
-      border-radius:
-        10px;
-
-      font-size:
-        13px;
-
-      text-align:
-        center;
-
-      display:
-        none;
-
-    }
-
-
-    .message.success {
-
-      display:
-        block;
-
-      background:
-        rgba(233, 248, 239, 0.88);
-
-      color:
-        #16743a;
-
-      border:
-        1px solid
-        rgba(22, 116, 58, 0.15);
-
-    }
-
-
-    .message.error {
-
-      display:
-        block;
-
-      background:
-        rgba(255, 240, 240, 0.88);
-
-      color:
-        #b42318;
-
-      border:
-        1px solid
-        rgba(180, 35, 24, 0.15);
-
-    }
-
-
-    /* =================================================
-       FOOTER
-    ================================================= */
-
-    .footer {
-
-      padding:
-        18px 22px;
-
-      text-align:
-        center;
-
-      background:
-        transparent;
-
-      border:
-        none;
-
-      border-top:
-        1px solid
-        rgba(255, 255, 255, 0.18);
-
-      box-shadow:
-        none;
-
-    }
-
-
-    .footer p {
-
-      font-size:
-        11px;
-
-      color:
-        #000;
-
-      line-height:
-        1.6;
-
-    }
-
-
-    /* =================================================
-       HIDDEN
-    ================================================= */
-
-    .hidden {
-
-      display:
-        none !important;
-
-    }
-
-
-    /* =================================================
-       MODAL
-    ================================================= */
-
-    .modal {
-
-      position:
-        fixed;
-
-      inset:
-        0;
-
-      z-index:
-        9999;
-
-      display:
-        flex;
-
-      align-items:
-        center;
-
-      justify-content:
-        center;
-
-      padding:
-        20px;
-
-    }
-
-
-    .modal-overlay {
-
-      position:
-        absolute;
-
-      inset:
-        0;
-
-      background:
-        rgba(0, 0, 0, 0.72);
-
-      backdrop-filter:
-        blur(5px);
-
-      -webkit-backdrop-filter:
-        blur(5px);
-
-    }
-
-
-    .modal-content {
-
-      position:
-        relative;
-
-      z-index:
-        2;
-
-      background:
-        rgba(255, 255, 255, 0.92);
-
-      backdrop-filter:
-        blur(16px);
-
-      -webkit-backdrop-filter:
-        blur(16px);
-
-      width:
-        100%;
-
-      max-width:
-        500px;
-
-      max-height:
-        90vh;
-
-      overflow:
-        auto;
-
-      border-radius:
-        20px;
-
-      padding:
-        22px;
-
-      border:
-        1px solid
-        rgba(255, 255, 255, 0.8);
-
-      box-shadow:
-        0 20px 60px
-        rgba(0, 0, 0, 0.3);
-
-      animation:
-        modalShow 0.2s ease;
-
-    }
-
-
-    .modal-content h2 {
-
-      font-size:
-        19px;
-
-      margin-bottom:
-        15px;
-
-    }
-
-
-    .close-button {
-
-      position:
-        absolute;
-
-      top:
-        12px;
-
-      right:
-        14px;
-
-      width:
-        35px;
-
-      height:
-        35px;
-
-      border:
-        none;
-
-      border-radius:
-        50%;
-
-      background:
-        #f1f1f1;
-
-      font-size:
-        24px;
-
-      cursor:
-        pointer;
-
-      line-height:
-        30px;
-
-    }
-
-
-    .mockup-image-wrapper {
-
-      width:
-        100%;
-
-      border-radius:
-        12px;
-
-      overflow:
-        hidden;
-
-      background:
-        #f5f5f5;
-
-    }
-
-
-    .mockup-image-wrapper img {
-
-      display:
-        block;
-
-      width:
-        100%;
-
-      height:
-        auto;
-
-    }
-
-
-    @keyframes modalShow {
-
-      from {
-
-        opacity:
-          0;
-
-        transform:
-          translateY(15px)
-          scale(0.97);
-
-      }
-
-      to {
-
-        opacity:
-          1;
-
-        transform:
-          translateY(0)
-          scale(1);
-
-      }
-
-    }
-
-
-    /* =================================================
-       MOBILE
-    ================================================= */
-
-    @media (max-width: 480px) {
-
-      body {
-
-        background-attachment:
-          scroll;
-
-      }
-
-
-      .page {
-
-        padding:
-          10px;
-
-      }
-
-
-      .glass-container {
-
-        border-radius:
-          24px;
-
-      }
-
-
-      .header {
-
-        padding:
-          20px 17px;
-
-        gap:
-          13px;
-
-      }
-
-
-      .logo-circle {
-
-        width:
-          58px;
-
-        height:
-          58px;
-
-        min-width:
-          58px;
-
-      }
-
-
-      .header h1 {
-
-        font-size:
-          19px;
-
-      }
-
-
-      .header p {
-
-        font-size:
-          11px;
-
-      }
-
-
-      .form-card {
-
-        padding:
-          25px 18px;
-
-      }
-
-
-      .footer {
-
-        padding:
-          17px;
-
-      }
-
-    }
-
-  </style>
-
-</head>
-
-
-<body>
-
-
-  <div class="page">
-
-    <div class="container">
-
-
-      <!-- =================================================
-           SATU KACA BESAR
-           HEADER + FORM + FOOTER
-      ================================================= -->
-
-      <div class="glass-container">
-
-
-        <!-- =================================================
-             HEADER
-        ================================================= -->
-
-        <div class="header">
-
-          <div class="logo-circle">
-
-            <img
+} 
+  
+  
+    .form-group label span {  
+  
+      color:  
+        #d71920;  
+  
+    }  
+  
+  
+    /* =================================================  
+       INPUT & SELECT  
+    ================================================= */  
+  
+    input,  
+    select {  
+  
+      width:  
+        100%;  
+  
+      height:  
+        49px;  
+  
+      border:  
+        1px solid  
+        rgba(0, 0, 0, 0.12);  
+  
+      border-radius:  
+        12px;  
+  
+      padding:  
+        0 15px;  
+  
+      font-size:  
+        14px;  
+  
+      outline:  
+        none;  
+  
+      background:  
+        rgba(255, 255, 255, 0.72);  
+  
+      color:  
+        #222;  
+  
+      transition:  
+        border 0.2s,  
+        box-shadow 0.2s,  
+        background 0.2s;  
+  
+    }  
+  
+  
+    input:focus,  
+    select:focus {  
+  
+      border-color:  
+        #222;  
+  
+      background:  
+        rgba(255, 255, 255, 0.90);  
+  
+      box-shadow:  
+        0 0 0 3px  
+        rgba(0, 0, 0, 0.08);  
+  
+    }  
+  
+  
+    input::placeholder {  
+  
+      color:  
+        #999;  
+  
+    }  
+  
+  
+    input:disabled {  
+  
+      background:  
+        rgba(235, 235, 235, 0.70);  
+  
+      color:  
+        #777;  
+  
+      cursor:  
+        not-allowed;  
+  
+    }  
+  
+  
+    .select-wrapper {  
+  
+      position:  
+        relative;  
+  
+    }  
+  
+  
+    .select-wrapper::after {  
+  
+      content:  
+        "⌄";  
+  
+      position:  
+        absolute;  
+  
+      right:  
+        16px;  
+  
+      top:  
+        12px;  
+  
+      font-size:  
+        20px;  
+  
+      pointer-events:  
+        none;  
+  
+      color:  
+        #555;  
+  
+    }  
+  
+  
+    .select-wrapper select {  
+  
+      appearance:  
+        none;  
+  
+      -webkit-appearance:  
+        none;  
+  
+      padding-right:  
+        45px;  
+  
+      cursor:  
+        pointer;  
+  
+    }  
+  
+  
+    small {  
+  
+      display:  
+        block;  
+  
+      margin-top:  
+        7px;  
+  
+      color:  
+        #666;  
+  
+      font-size:  
+        11px;  
+  
+    }  
+  
+  
+    /* =================================================  
+       BUTTON  
+    ================================================= */  
+  
+    .mockup-button,  
+    .submit-button {  
+  
+      width:  
+        100%;  
+  
+      height:  
+        51px;  
+  
+      border:  
+        none;  
+  
+      border-radius:  
+        12px;  
+  
+      cursor:  
+        pointer;  
+  
+      font-size:  
+        14px;  
+  
+      font-weight:  
+        700;  
+  
+      transition:  
+        transform 0.15s,  
+        opacity 0.2s,  
+        background 0.2s;  
+  
+    }  
+  
+  
+    .mockup-button:active,  
+    .submit-button:active {  
+  
+      transform:  
+        scale(0.98);  
+  
+    }  
+  
+  
+    .mockup-button {  
+  
+      background:  
+        rgba(255, 255, 255, 0.50);  
+  
+      color:  
+        #222;  
+  
+      margin-bottom:  
+        12px;  
+  
+      border:  
+        1px solid  
+        rgba(0, 0, 0, 0.08);  
+  
+      backdrop-filter:  
+        blur(8px);  
+  
+      -webkit-backdrop-filter:  
+        blur(8px);  
+  
+    }  
+  
+  
+    .mockup-button:hover {  
+  
+      background:  
+        rgba(255, 255, 255, 0.75);  
+  
+    }  
+  
+  
+    .shirt-icon {  
+  
+      margin-right:  
+        6px;  
+  
+      font-size:  
+        17px;  
+  
+    }  
+  
+  
+    .submit-button {  
+  
+      background:  
+        rgba(17, 17, 17, 0.94);  
+  
+      color:  
+        #ffffff;  
+  
+      box-shadow:  
+        0 6px 15px  
+        rgba(0, 0, 0, 0.18);  
+  
+    }  
+  
+  
+    .submit-button:hover {  
+  
+      background:  
+        #292929;  
+  
+    }  
+  
+  
+    .submit-button:disabled {  
+  
+      opacity:  
+        0.6;  
+  
+      cursor:  
+        not-allowed;  
+  
+    }  
+  
+  
+    /* =================================================  
+       MESSAGE  
+    ================================================= */  
+  
+    .message {  
+  
+      margin-top:  
+        15px;  
+  
+      padding:  
+        12px;  
+  
+      border-radius:  
+        10px;  
+  
+      font-size:  
+        13px;  
+  
+      text-align:  
+        center;  
+  
+      display:  
+        none;  
+  
+    }  
+  
+  
+    .message.success {  
+  
+      display:  
+        block;  
+  
+      background:  
+        rgba(233, 248, 239, 0.88);  
+  
+      color:  
+        #16743a;  
+  
+      border:  
+        1px solid  
+        rgba(22, 116, 58, 0.15);  
+  
+    }  
+  
+  
+    .message.error {  
+  
+      display:  
+        block;  
+  
+      background:  
+        rgba(255, 240, 240, 0.88);  
+  
+      color:  
+        #b42318;  
+  
+      border:  
+        1px solid  
+        rgba(180, 35, 24, 0.15);  
+  
+    }  
+  
+  
+    /* =================================================  
+       FOOTER  
+    ================================================= */  
+  
+    .footer {  
+  
+      padding:  
+        18px 22px;  
+  
+      text-align:  
+        center;  
+  
+      background:  
+        transparent;  
+  
+      border:  
+        none;  
+  
+      border-top:  
+        1px solid  
+        rgba(255, 255, 255, 0.18);  
+  
+      box-shadow:  
+        none;  
+  
+    }  
+  
+  
+    .footer p {  
+  
+      font-size:  
+        11px;  
+  
+      color:  
+        #000;  
+  
+      line-height:  
+        1.6;  
+  
+    }  
+  
+  
+    /* =================================================  
+       HIDDEN  
+    ================================================= */  
+  
+    .hidden {  
+  
+      display:  
+        none !important;  
+  
+    }  
+  
+  
+    /* =================================================  
+       MODAL  
+    ================================================= */  
+  
+    .modal {  
+  
+      position:  
+        fixed;  
+  
+      inset:  
+        0;  
+  
+      z-index:  
+        9999;  
+  
+      display:  
+        flex;  
+  
+      align-items:  
+        center;  
+  
+      justify-content:  
+        center;  
+  
+      padding:  
+        20px;  
+  
+    }  
+  
+  
+    .modal-overlay {  
+  
+      position:  
+        absolute;  
+  
+      inset:  
+        0;  
+  
+      background:  
+        rgba(0, 0, 0, 0.72);  
+  
+      backdrop-filter:  
+        blur(5px);  
+  
+      -webkit-backdrop-filter:  
+        blur(5px);  
+  
+    }  
+  
+  
+    .modal-content {  
+  
+      position:  
+        relative;  
+  
+      z-index:  
+        2;  
+  
+      background:  
+        rgba(255, 255, 255, 0.92);  
+  
+      backdrop-filter:  
+        blur(16px);  
+  
+      -webkit-backdrop-filter:  
+        blur(16px);  
+  
+      width:  
+        100%;  
+  
+      max-width:  
+        500px;  
+  
+      max-height:  
+        90vh;  
+  
+      overflow:  
+        auto;  
+  
+      border-radius:  
+        20px;  
+  
+      padding:  
+        22px;  
+  
+      border:  
+        1px solid  
+        rgba(255, 255, 255, 0.8);  
+  
+      box-shadow:  
+        0 20px 60px  
+        rgba(0, 0, 0, 0.3);  
+  
+      animation:  
+        modalShow 0.2s ease;  
+  
+    }  
+  
+  
+    .modal-content h2 {  
+  
+      font-size:  
+        19px;  
+  
+      margin-bottom:  
+        15px;  
+  
+    }  
+  
+  
+    .close-button {  
+  
+      position:  
+        absolute;  
+  
+      top:  
+        12px;  
+  
+      right:  
+        14px;  
+  
+      width:  
+        35px;  
+  
+      height:  
+        35px;  
+  
+      border:  
+        none;  
+  
+      border-radius:  
+        50%;  
+  
+      background:  
+        #f1f1f1;  
+  
+      font-size:  
+        24px;  
+  
+      cursor:  
+        pointer;  
+  
+      line-height:  
+        30px;  
+  
+    }  
+  
+  
+    .mockup-image-wrapper {  
+  
+      width:  
+        100%;  
+  
+      border-radius:  
+        12px;  
+  
+      overflow:  
+        hidden;  
+  
+      background:  
+        #f5f5f5;  
+  
+    }  
+  
+  
+    .mockup-image-wrapper img {  
+  
+      display:  
+        block;  
+  
+      width:  
+        100%;  
+  
+      height:  
+        auto;  
+  
+    }  
+  
+  
+    @keyframes modalShow {  
+  
+      from {  
+  
+        opacity:  
+          0;  
+  
+        transform:  
+          translateY(15px)  
+          scale(0.97);  
+  
+      }  
+  
+      to {  
+  
+        opacity:  
+          1;  
+  
+        transform:  
+          translateY(0)  
+          scale(1);  
+  
+      }  
+  
+    }  
+  
+  
+    /* =================================================  
+       MOBILE  
+    ================================================= */  
+  
+    @media (max-width: 480px) {  
+  
+      body {  
+  
+        background-attachment:  
+          scroll;  
+  
+      }  
+  
+  
+      .page {  
+  
+        padding:  
+          10px;  
+  
+      }  
+  
+  
+      .glass-container {  
+  
+        border-radius:  
+          24px;  
+  
+      }  
+  
+  
+      .header {  
+  
+        padding:  
+          20px 17px;  
+  
+        gap:  
+          13px;  
+  
+      }  
+  
+  
+      .logo-circle {  
+  
+        width:  
+          58px;  
+  
+        height:  
+          58px;  
+  
+        min-width:  
+          58px;  
+  
+      }  
+  
+  
+      .header h1 {  
+  
+        font-size:  
+          19px;  
+  
+      }  
+  
+  
+      .header p {  
+  
+        font-size:  
+          11px;  
+  
+      }  
+  
+  
+      .form-card {  
+  
+        padding:  
+          25px 18px;  
+  
+      }  
+  
+  
+      .footer {  
+  
+        padding:  
+          17px;  
+  
+      }  
+  
+    }  
+  
+  </style>  
+  
+</head>  
+  
+  
+<body>  
+  
+  
+  <div class="page">  
+  
+    <div class="container">  
+  
+  
+      <!-- =================================================  
+           SATU KACA BESAR  
+           HEADER + FORM + FOOTER  
+      ================================================= -->  
+  
+      <div class="glass-container">  
+  
+  
+        <!-- =================================================  
+             HEADER  
+        ================================================= -->  
+  
+        <div class="header">  
+  
+          <div class="logo-circle">  
+  
+            <img  
               src="IMG-20260809-WA0004.jpg"
-              alt="Logo Ranch Market"
-            >
-
-          </div>
-
-
-          <div class="header-text">
-
-            <div class="small-title">
-              RANCH MARKET KEMANG
-            </div>
-
-
-            <h1>
-              PENDAFTARAN OUTING
-            </h1>
-
-
-            <p>
-              Silahkan lengkapi data peserta outing
-            </p>
-
-          </div>
-
-        </div>
-
-
-        <!-- =================================================
-             FORM
-        ================================================= -->
-
-        <div class="form-card">
-
-          <form id="outingForm">
-
-
-            <!-- NAMA -->
-
-            <div class="form-group">
-
-              <label for="nama">
-
-                Nama Lengkap
-
-                <span>*</span>
-
-              </label>
-
-
-              <input
-                type="text"
-                id="nama"
-                name="nama"
-                placeholder="Masukkan nama lengkap"
-                autocomplete="name"
-                required
-              >
-
-            </div>
-
-
-            <!-- POSITION -->
-
-            <div class="form-group">
-
-              <label for="position">
-
-                Position
-
-                <span>*</span>
-
-              </label>
-
-
-              <div class="select-wrapper">
-
-                <select
-                  id="position"
-                  name="position"
-                  required
-                >
-
-                  <option value="">
-                    Pilih Position
-                  </option>
-
-
-                  <option value="Ranch Market">
-                    Ranch Market
-                  </option>
-
-
-                  <option value="SPG/SPM">
-                    SPG/SPM
-                  </option>
-
-
-                  <option value="Security">
-                    Security
-                  </option>
-
-
-                  <option value="Tenant">
-                    Tenant
-                  </option>
-
-                </select>
-
-              </div>
-
-            </div>
-
-
-            <!-- NIK -->
-
-            <div
-              class="form-group hidden"
-              id="nikGroup"
-            >
-
-              <label for="nik">
-
-                NIK Karyawan / NIK Sispel
-
-                <span>*</span>
-
-              </label>
-
-
-              <input
-                type="text"
-                id="nik"
-                name="nik"
-                placeholder="Masukkan NIK"
-                autocomplete="off"
-              >
-
-
-              <small id="nikInfo">
-                NIK wajib diisi untuk Ranch Market
-              </small>
-
-            </div>
-
-
-            <!-- KESEDIAAN -->
-
-            <div class="form-group">
-
-              <label for="ikut">
-
-                Bersedia Mengikuti Outing
-
-                <span>*</span>
-
-              </label>
-
-
-              <div class="select-wrapper">
-
-                <select
-                  id="ikut"
-                  name="ikut"
-                  required
-                >
-
-                  <option value="">
-                    Pilih Jawaban
-                  </option>
-
-
-                  <option value="Bersedia Ikut">
-                    Bersedia Ikut
-                  </option>
-
-
-                  <option value="Tidak Bersedia Ikut">
-                    Tidak Bersedia Ikut
-                  </option>
-
-                </select>
-
-              </div>
-
-            </div>
-
-
-            <!-- BIKIN BAJU -->
-
-            <div class="form-group">
-
-              <label for="bikinBaju">
-
-                Bikin Baju
-
-                <span>*</span>
-
-              </label>
-
-
-              <div class="select-wrapper">
-
-                <select
-                  id="bikinBaju"
-                  name="bikinBaju"
-                  required
-                >
-
-                  <option value="">
-                    Pilih Jawaban
-                  </option>
-
-
-                  <option value="Iya">
-                    Iya
-                  </option>
-
-
-                  <option value="Tidak">
-                    Tidak
-                  </option>
-
-                </select>
-
-              </div>
-
-            </div>
-
-
-            <!-- UKURAN BAJU -->
-
-            <div
-              class="form-group hidden"
-              id="ukuranGroup"
-            >
-
-              <label for="ukuranBaju">
-
-                Ukuran Baju
-
-                <span>*</span>
-
-              </label>
-
-
-              <div class="select-wrapper">
-
-                <select
-                  id="ukuranBaju"
-                  name="ukuranBaju"
-                >
-
-                  <option value="">
-                    Pilih Ukuran
-                  </option>
-
-
-                  <option value="S">
-                    S
-                  </option>
-
-
-                  <option value="M">
-                    M
-                  </option>
-
-
-                  <option value="L">
-                    L
-                  </option>
-
-
-                  <option value="XL">
-                    XL
-                  </option>
-
-
-                  <option value="XXL">
-                    XXL
-                  </option>
-
-
-                  <option value="XXXL">
-                    XXXL
-                  </option>
-
-                </select>
-
-              </div>
-
-            </div>
-
-
-            <!-- MOCKUP -->
-
-            <button
-              type="button"
-              class="mockup-button"
-              id="mockupButton"
-            >
-
-              <span class="shirt-icon">
-                👕
-              </span>
-
-              Lihat Mockup Kaos
-
-            </button>
-
-
-            <!-- KIRIM -->
-
-            <button
-              type="submit"
-              class="submit-button"
-              id="submitButton"
-            >
-
-              <span id="submitText">
-                KIRIM DATA
-              </span>
-
-
-              <span
-                id="loading"
-                class="loading hidden"
-              >
-                Mengirim...
-              </span>
-
-            </button>
-
-
-            <div
-              id="message"
-              class="message"
-            ></div>
-
-
-          </form>
-
-        </div>
-
-
-        <!-- =================================================
-             FOOTER
-        ================================================= -->
-
-        <div class="footer">
-
-          <p>
-            © 2026 Ranch Market Kemang
-          </p>
-
-
-          <p>
-            Data pendaftaran outing
-          </p>
-
-        </div>
-
-
-      </div>
-
-    </div>
-
-  </div>
-
-
-  <!-- =================================================
-       MODAL MOCKUP
-  ================================================= -->
-
-  <div
-    class="modal hidden"
-    id="mockupModal"
-  >
-
-    <div
-      class="modal-overlay"
-      id="modalOverlay"
-    ></div>
-
-
-    <div class="modal-content">
-
-
-      <button
-        type="button"
-        class="close-button"
-        id="closeModal"
-      >
-        ×
-      </button>
-
-
-      <h2>
-        Mockup Kaos
-      </h2>
-
-
-      <div class="mockup-image-wrapper">
-
-        <img
-          src="IMG-20260809-WA0000.jpg"
-          alt="Mockup Kaos Outing RM Kemang"
-        >
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-
-  <script>
-
-
-    // =================================================
-    // GOOGLE APPS SCRIPT
-    // =================================================
-
-    const API_URL =
-      "https://script.google.com/macros/s/AKfycbyULwRXWwwX37FeOTRXyB80DAVHK2BRFujvdNLZskvPLxA4up9MEO3fTSqWGxId3mQo6g/exec";
-
-
-    // =================================================
-    // ELEMENT
-    // =================================================
-
-    const form =
-      document.getElementById(
-        "outingForm"
-      );
-
-
-    const nama =
-      document.getElementById(
-        "nama"
-      );
-
-
-    const position =
-      document.getElementById(
-        "position"
-      );
-
-
-    const nik =
-      document.getElementById(
-        "nik"
-      );
-
-
-    const nikGroup =
-      document.getElementById(
-        "nikGroup"
-      );
-
-
-    const nikInfo =
-      document.getElementById(
-        "nikInfo"
-      );
-
-
-    const ikut =
-      document.getElementById(
-        "ikut"
-      );
-
-
-    const bikinBaju =
-      document.getElementById(
-        "bikinBaju"
-      );
-
-
-    const ukuranGroup =
-      document.getElementById(
-        "ukuranGroup"
-      );
-
-
-    const ukuranBaju =
-      document.getElementById(
-        "ukuranBaju"
-      );
-
-
-    const submitButton =
-      document.getElementById(
-        "submitButton"
-      );
-
-
-    const submitText =
-      document.getElementById(
-        "submitText"
-      );
-
-
-    const loading =
-      document.getElementById(
-        "loading"
-      );
-
-
-    const message =
-      document.getElementById(
-        "message"
-      );
-
-
-    const mockupButton =
-      document.getElementById(
-        "mockupButton"
-      );
-
-
-    const mockupModal =
-      document.getElementById(
-        "mockupModal"
-      );
-
-
-    const closeModal =
-      document.getElementById(
-        "closeModal"
-      );
-
-
-    const modalOverlay =
-      document.getElementById(
-        "modalOverlay"
-      );
-
-
-    // =================================================
-    // POSITION
-    // =================================================
-
-    position.addEventListener(
-      "change",
-      function () {
-
-        const value =
-          this.value;
-
-
-        if (
-          value ===
-          "Ranch Market"
-        ) {
-
-          nikGroup.classList.remove(
-            "hidden"
-          );
-
-
-          nik.disabled =
-            false;
-
-
-          nik.required =
-            true;
-
-
-          nik.value =
-            "";
-
-
-          nik.placeholder =
-            "Masukkan NIK Ranch Market";
-
-
-          nikInfo.textContent =
-            "NIK wajib diisi untuk Ranch Market";
-
-
-        }
-
-        else if (
-          value !== ""
-        ) {
-
-          nikGroup.classList.remove(
-            "hidden"
-          );
-
-
-          nik.disabled =
-            true;
-
-
-          nik.required =
-            false;
-
-
-          nik.value =
-            value;
-
-
-          nik.placeholder =
-            "Otomatis sesuai Position";
-
-
-          nikInfo.textContent =
-            "Identitas otomatis sesuai Position";
-
-
-        }
-
-        else {
-
-          nikGroup.classList.add(
-            "hidden"
-          );
-
-
-          nik.disabled =
-            false;
-
-
-          nik.required =
-            false;
-
-
-          nik.value =
-            "";
-
-        }
-
-      }
-    );
-
-
-    // =================================================
-    // BIKIN BAJU
-    // =================================================
-
-    bikinBaju.addEventListener(
-      "change",
-      function () {
-
-        const value =
-          this.value;
-
-
-        if (
-          value === "Iya"
-        ) {
-
-          ukuranGroup.classList.remove(
-            "hidden"
-          );
-
-
-          ukuranBaju.required =
-            true;
-
-        }
-
-        else {
-
-          ukuranGroup.classList.add(
-            "hidden"
-          );
-
-
-          ukuranBaju.required =
-            false;
-
-
-          ukuranBaju.value =
-            "";
-
-        }
-
-      }
-    );
-
-
-    // =================================================
-    // MOCKUP
-    // =================================================
-
-    mockupButton.addEventListener(
-      "click",
-      function () {
-
-        mockupModal.classList.remove(
-          "hidden"
-        );
-
-      }
-    );
-
-
-    closeModal.addEventListener(
-      "click",
-      function () {
-
-        mockupModal.classList.add(
-          "hidden"
-        );
-
-      }
-    );
-
-
-    modalOverlay.addEventListener(
-      "click",
-      function () {
-
-        mockupModal.classList.add(
-          "hidden"
-        );
-
-      }
-    );
-
-
-    // =================================================
-    // SUBMIT
-    // =================================================
-
-    form.addEventListener(
-      "submit",
-      async function (event) {
-
-        event.preventDefault();
-
-
-        clearMessage();
-
-
-        // =================================================
-        // CEK URL
-        // =================================================
-
-        if (
-          !API_URL ||
-          API_URL ===
-          "MASUKKAN_URL_GOOGLE_APPS_SCRIPT_DI_SINI"
-        ) {
-
-          showMessage(
-            "error",
-            "URL Google Apps Script belum dimasukkan."
-          );
-
-          return;
-
-        }
-
-
-        // =================================================
-        // NAMA
-        // =================================================
-
-        if (
-          !nama.value.trim()
-        ) {
-
-          showMessage(
-            "error",
-            "Nama wajib diisi."
-          );
-
-          nama.focus();
-
-          return;
-
-        }
-
-
-        // =================================================
-        // POSITION
-        // =================================================
-
-        if (
-          !position.value
-        ) {
-
-          showMessage(
-            "error",
-            "Silakan pilih Position."
-          );
-
-          position.focus();
-
-          return;
-
-        }
-
-
-        // =================================================
-        // NIK
-        // =================================================
-
-        if (
-          position.value ===
-          "Ranch Market" &&
-          !nik.value.trim()
-        ) {
-
-          showMessage(
-            "error",
-            "NIK wajib diisi untuk Ranch Market."
-          );
-
-          nik.focus();
-
-          return;
-
-        }
-
-
-        // =================================================
-        // BERSEDIA
-        // =================================================
-
-        if (
-          !ikut.value
-        ) {
-
-          showMessage(
-            "error",
-            "Silakan pilih kesediaan mengikuti outing."
-          );
-
-          ikut.focus();
-
-          return;
-
-        }
-
-
-        // =================================================
-        // BIKIN BAJU
-        // =================================================
-
-        if (
-          !bikinBaju.value
-        ) {
-
-          showMessage(
-            "error",
-            "Silakan pilih Bikin Baju."
-          );
-
-          bikinBaju.focus();
-
-          return;
-
-        }
-
-
-        // =================================================
-        // UKURAN
-        // =================================================
-
-        if (
-          bikinBaju.value ===
-          "Iya" &&
-          !ukuranBaju.value
-        ) {
-
-          showMessage(
-            "error",
-            "Silakan pilih ukuran baju."
-          );
-
-          ukuranBaju.focus();
-
-          return;
-
-        }
-
-
-        // =================================================
-        // DATA
-        // =================================================
-
-        const data =
-          new URLSearchParams();
-
-
-        data.append(
-          "nama",
-          nama.value.trim()
-        );
-
-
-        data.append(
-          "position",
-          position.value
-        );
-
-
-        data.append(
-          "nik",
-          nik.value.trim()
-        );
-
-
-        data.append(
-          "ikut",
-          ikut.value
-        );
-
-
-        data.append(
-          "bikinBaju",
-          bikinBaju.value
-        );
-
-
-        data.append(
-          "ukuranBaju",
-          bikinBaju.value ===
-          "Tidak"
-            ? "Tidak"
-            : ukuranBaju.value
-        );
-
-
-        // =================================================
-        // LOADING
-        // =================================================
-
-        submitButton.disabled =
-          true;
-
-
-        submitText.classList.add(
-          "hidden"
-        );
-
-
-        loading.classList.remove(
-          "hidden"
-        );
-
-
-        // =================================================
-        // KIRIM DATA
-        // =================================================
-
-        try {
-
-          await fetch(
-            API_URL,
-            {
-
-              method:
-                "POST",
-
-              mode:
-                "no-cors",
-
-              headers: {
-
-                "Content-Type":
-                  "application/x-www-form-urlencoded"
-
-              },
-
-              body:
-                data.toString()
-
-            }
-          );
-
-
-          showMessage(
-            "success",
-            "✓ Data berhasil dikirim. Terima kasih sudah mendaftar!"
-          );
-
-
-          // =================================================
-          // RESET FORM
-          // =================================================
-
-          form.reset();
-
-
-          nikGroup.classList.add(
-            "hidden"
-          );
-
-
-          nik.disabled =
-            false;
-
-
-          nik.required =
-            false;
-
-
-          ukuranGroup.classList.add(
-            "hidden"
-          );
-
-
-          ukuranBaju.required =
-            false;
-
-
-        }
-
-        catch (error) {
-
-          console.error(
-            error
-          );
-
-
-          showMessage(
-            "error",
-            "Data gagal dikirim. Silakan coba lagi."
-          );
-
-        }
-
-
-        // =================================================
-        // STOP LOADING
-        // =================================================
-
-        submitButton.disabled =
-          false;
-
-
-        submitText.classList.remove(
-          "hidden"
-        );
-
-
-        loading.classList.add(
-          "hidden"
-        );
-
-      }
-    );
-
-
-    // =================================================
-    // MESSAGE
-    // =================================================
-
-    function showMessage(
-      type,
-      text
-    ) {
-
-      message.className =
-        "message " + type;
-
-
-      message.textContent =
-        text;
-
-    }
-
-
-    function clearMessage() {
-
-      message.className =
-        "message";
-
-
-      message.textContent =
-        "";
-
-    }
-
-  </script>
-
-
-</body>
-
-</html>
+              alt="Logo Ranch Market"  
+            >  
+  
+          </div>  
+  
+  
+          <div class="header-text">  
+  
+            <div class="small-title">  
+              RANCH MARKET KEMANG  
+            </div>  
+  
+  
+            <h1>  
+              PENDAFTARAN OUTING  
+            </h1>  
+  
+  
+            <p>  
+              Silakan lengkapi data peserta outing  
+            </p>  
+  
+          </div>  
+  
+        </div>  
+  
+  
+        <!-- =================================================  
+             FORM  
+        ================================================= -->  
+  
+        <div class="form-card">  
+  
+          <form id="outingForm">  
+  
+  
+            <!-- NAMA -->  
+  
+            <div class="form-group">  
+  
+              <label for="nama">  
+  
+                Nama Lengkap  
+  
+                <span>*</span>  
+  
+              </label>  
+  
+  
+              <input  
+                type="text"  
+                id="nama"  
+                name="nama"  
+                placeholder="Masukkan nama lengkap"  
+                autocomplete="name"  
+                required  
+              >  
+  
+            </div>  
+  
+  
+            <!-- POSITION -->  
+  
+            <div class="form-group">  
+  
+              <label for="position">  
+  
+                Position  
+  
+                <span>*</span>  
+  
+              </label>  
+  
+  
+              <div class="select-wrapper">  
+  
+                <select  
+                  id="position"  
+                  name="position"  
+                  required  
+                >  
+  
+                  <option value="">  
+                    Pilih Position  
+                  </option>  
+  
+  
+                  <option value="Ranch Market">  
+                    Ranch Market  
+                  </option>  
+  
+  
+                  <option value="SPG/SPM">  
+                    SPG/SPM  
+                  </option>  
+  
+  
+                  <option value="Security">  
+                    Security  
+                  </option>  
+  
+  
+                  <option value="Tenant">  
+                    Tenant  
+                  </option>  
+  
+                </select>  
+  
+              </div>  
+  
+            </div>  
+  
+  
+            <!-- NIK -->  
+  
+            <div  
+              class="form-group hidden"  
+              id="nikGroup"  
+            >  
+  
+              <label for="nik">  
+  
+                NIK Karyawan / NIK Sispel 
+  
+                <span>*</span>  
+  
+              </label>  
+  
+  
+              <input  
+                type="text"  
+                id="nik"  
+                name="nik"  
+                placeholder="Masukkan NIK"  
+                autocomplete="off"  
+              >  
+  
+  
+              <small id="nikInfo">  
+                NIK wajib diisi untuk Ranch Market  
+              </small>  
+  
+            </div>  
+  
+  
+            <!-- KESEDIAAN -->  
+  
+            <div class="form-group">  
+  
+              <label for="ikut">  
+  
+                Bersedia Mengikuti Outing  
+  
+                <span>*</span>  
+  
+              </label>  
+  
+  
+              <div class="select-wrapper">  
+  
+                <select  
+                  id="ikut"  
+                  name="ikut"  
+                  required  
+                >  
+  
+                  <option value="">  
+                    Pilih Jawaban  
+                  </option>  
+  
+  
+                  <option value="Bersedia Ikut">  
+                    Bersedia Ikut  
+                  </option>  
+  
+  
+                  <option value="Tidak Bersedia Ikut">  
+                    Tidak Bersedia Ikut  
+                  </option>  
+  
+                </select>  
+  
+              </div>  
+  
+            </div>  
+  
+  
+            <!-- BIKIN BAJU -->  
+  
+            <div class="form-group">  
+  
+              <label for="bikinBaju">  
+  
+                Bikin Baju  
+  
+                <span>*</span>  
+  
+              </label>  
+  
+  
+              <div class="select-wrapper">  
+  
+                <select  
+                  id="bikinBaju"  
+                  name="bikinBaju"  
+                  required  
+                >  
+  
+                  <option value="">  
+                    Pilih Jawaban  
+                  </option>  
+  
+  
+                  <option value="Iya">  
+                    Iya  
+                  </option>  
+  
+  
+                  <option value="Tidak">  
+                    Tidak  
+                  </option>  
+  
+                </select>  
+  
+              </div>  
+  
+            </div>  
+  
+  
+            <!-- UKURAN BAJU -->  
+  
+            <div  
+              class="form-group hidden"  
+              id="ukuranGroup"  
+            >  
+  
+              <label for="ukuranBaju">  
+  
+                Ukuran Baju  
+  
+                <span>*</span>  
+  
+              </label>  
+  
+  
+              <div class="select-wrapper">  
+  
+                <select  
+                  id="ukuranBaju"  
+                  name="ukuranBaju"  
+                >  
+  
+                  <option value="">  
+                    Pilih Ukuran  
+                  </option>  
+  
+  
+                  <option value="S">  
+                    S  
+                  </option>  
+  
+  
+                  <option value="M">  
+                    M  
+                  </option>  
+  
+  
+                  <option value="L">  
+                    L  
+                  </option>  
+  
+  
+                  <option value="XL">  
+                    XL  
+                  </option>  
+  
+  
+                  <option value="XXL">  
+                    XXL  
+                  </option>  
+  
+  
+                  <option value="XXXL">  
+                    XXXL  
+                  </option>  
+  
+                </select>  
+  
+              </div>  
+  
+            </div>  
+  
+  
+            <!-- MOCKUP -->  
+  
+            <button  
+              type="button"  
+              class="mockup-button"  
+              id="mockupButton"  
+            >  
+  
+              <span class="shirt-icon">  
+                👕  
+              </span>  
+  
+              Lihat Mockup Kaos  
+  
+            </button>  
+  
+  
+            <!-- KIRIM -->  
+  
+            <button  
+              type="submit"  
+              class="submit-button"  
+              id="submitButton"  
+            >  
+  
+              <span id="submitText">  
+                KIRIM DATA  
+              </span>  
+  
+  
+              <span  
+                id="loading"  
+                class="loading hidden"  
+              >  
+                Mengirim...  
+              </span>  
+  
+            </button>  
+  
+  
+            <div  
+              id="message"  
+              class="message"  
+            ></div>  
+  
+  
+          </form>  
+  
+        </div>  
+  
+  
+        <!-- =================================================  
+             FOOTER  
+        ================================================= -->  
+  
+        <div class="footer">  
+  
+          <p>  
+            © 2026 Ranch Market Kemang  
+          </p>  
+  
+  
+          <p>  
+            Data pendaftaran outing  
+          </p>  
+  
+        </div>  
+  
+  
+      </div>  
+  
+    </div>  
+  
+  </div>  
+  
+  
+  <!-- =================================================  
+       MODAL MOCKUP  
+  ================================================= -->  
+  
+  <div  
+    class="modal hidden"  
+    id="mockupModal"  
+  >  
+  
+    <div  
+      class="modal-overlay"  
+      id="modalOverlay"  
+    ></div>  
+  
+  
+    <div class="modal-content">  
+  
+  
+      <button  
+        type="button"  
+        class="close-button"  
+        id="closeModal"  
+      >  
+        ×  
+      </button>  
+  
+  
+      <h2>  
+        Mockup Kaos  
+      </h2>  
+  
+  
+      <div class="mockup-image-wrapper">  
+  
+        <img  
+          src="IMG-20260809-WA0000.jpg"  
+          alt="Mockup Kaos Outing RM Kemang"  
+        >  
+  
+      </div>  
+  
+  
+    </div>  
+  
+  </div>  
+  
+  
+  <script>  
+  
+  
+    // =================================================  
+    // GOOGLE APPS SCRIPT  
+    // =================================================  
+  
+    const API_URL =  
+      "https://script.google.com/macros/s/AKfycbyULwRXWwwX37FeOTRXyB80DAVHK2BRFujvdNLZskvPLxA4up9MEO3fTSqWGxId3mQo6g/exec";  
+  
+  
+    // =================================================  
+    // ELEMENT  
+    // =================================================  
+  
+    const form =  
+      document.getElementById(  
+        "outingForm"  
+      );  
+  
+  
+    const nama =  
+      document.getElementById(  
+        "nama"  
+      );  
+  
+  
+    const position =  
+      document.getElementById(  
+        "position"  
+      );  
+  
+  
+    const nik =  
+      document.getElementById(  
+        "nik"  
+      );  
+  
+  
+    const nikGroup =  
+      document.getElementById(  
+        "nikGroup"  
+      );  
+  
+  
+    const nikInfo =  
+      document.getElementById(  
+        "nikInfo"  
+      );  
+  
+  
+    const ikut =  
+      document.getElementById(  
+        "ikut"  
+      );  
+  
+  
+    const bikinBaju =  
+      document.getElementById(  
+        "bikinBaju"  
+      );  
+  
+  
+    const ukuranGroup =  
+      document.getElementById(  
+        "ukuranGroup"  
+      );  
+  
+  
+    const ukuranBaju =  
+      document.getElementById(  
+        "ukuranBaju"  
+      );  
+  
+  
+    const submitButton =  
+      document.getElementById(  
+        "submitButton"  
+      );  
+  
+  
+    const submitText =  
+      document.getElementById(  
+        "submitText"  
+      );  
+  
+  
+    const loading =  
+      document.getElementById(  
+        "loading"  
+      );  
+  
+  
+    const message =  
+      document.getElementById(  
+        "message"  
+      );  
+  
+  
+    const mockupButton =  
+      document.getElementById(  
+        "mockupButton"  
+      );  
+  
+  
+    const mockupModal =  
+      document.getElementById(  
+        "mockupModal"  
+      );  
+  
+  
+    const closeModal =  
+      document.getElementById(  
+        "closeModal"  
+      );  
+  
+  
+    const modalOverlay =  
+      document.getElementById(  
+        "modalOverlay"  
+      );  
+  
+  
+    // =================================================  
+    // POSITION  
+    // =================================================  
+  
+    position.addEventListener(  
+      "change",  
+      function () {  
+  
+        const value =  
+          this.value;  
+  
+  
+        if (  
+          value ===  
+          "Ranch Market"  
+        ) {  
+  
+          nikGroup.classList.remove(  
+            "hidden"  
+          );  
+  
+  
+          nik.disabled =  
+            false;  
+  
+  
+          nik.required =  
+            true;  
+  
+  
+          nik.value =  
+            "";  
+  
+  
+          nik.placeholder =  
+            "Masukkan NIK Ranch Market";  
+  
+  
+          nikInfo.textContent =  
+            "NIK wajib diisi untuk Ranch Market";  
+  
+  
+        }  
+  
+        else if (  
+          value !== ""  
+        ) {  
+  
+          nikGroup.classList.remove(  
+            "hidden"  
+          );  
+  
+  
+          nik.disabled =  
+            true;  
+  
+  
+          nik.required =  
+            false;  
+  
+  
+          nik.value =  
+            value;  
+  
+  
+          nik.placeholder =  
+            "Otomatis sesuai Position";  
+  
+  
+          nikInfo.textContent =  
+            "Identitas otomatis sesuai Position";  
+  
+  
+        }  
+  
+        else {  
+  
+          nikGroup.classList.add(  
+            "hidden"  
+          );  
+  
+  
+          nik.disabled =  
+            false;  
+  
+  
+          nik.required =  
+            false;  
+  
+  
+          nik.value =  
+            "";  
+  
+        }  
+  
+      }  
+    );  
+  
+  
+    // =================================================  
+    // BIKIN BAJU  
+    // =================================================  
+  
+    bikinBaju.addEventListener(  
+      "change",  
+      function () {  
+  
+        const value =  
+          this.value;  
+  
+  
+        if (  
+          value === "Iya"  
+        ) {  
+  
+          ukuranGroup.classList.remove(  
+            "hidden"  
+          );  
+  
+  
+          ukuranBaju.required =  
+            true;  
+  
+        }  
+  
+        else {  
+  
+          ukuranGroup.classList.add(  
+            "hidden"  
+          );  
+  
+  
+          ukuranBaju.required =  
+            false;  
+  
+  
+          ukuranBaju.value =  
+            "";  
+  
+        }  
+  
+      }  
+    );  
+  
+  
+    // =================================================  
+    // MOCKUP  
+    // =================================================  
+  
+    mockupButton.addEventListener(  
+      "click",  
+      function () {  
+  
+        mockupModal.classList.remove(  
+          "hidden"  
+        );  
+  
+      }  
+    );  
+  
+  
+    closeModal.addEventListener(  
+      "click",  
+      function () {  
+  
+        mockupModal.classList.add(  
+          "hidden"  
+        );  
+  
+      }  
+    );  
+  
+  
+    modalOverlay.addEventListener(  
+      "click",  
+      function () {  
+  
+        mockupModal.classList.add(  
+          "hidden"  
+        );  
+  
+      }  
+    );  
+  
+  
+    // =================================================  
+    // SUBMIT  
+    // =================================================  
+  
+    form.addEventListener(  
+      "submit",  
+      async function (event) {  
+  
+        event.preventDefault();  
+  
+  
+        clearMessage();  
+  
+  
+        // =================================================  
+        // CEK URL  
+        // =================================================  
+  
+        if (  
+          !API_URL ||  
+          API_URL ===  
+          "MASUKKAN_URL_GOOGLE_APPS_SCRIPT_DI_SINI"  
+        ) {  
+  
+          showMessage(  
+            "error",  
+            "URL Google Apps Script belum dimasukkan."  
+          );  
+  
+          return;  
+  
+        }  
+  
+  
+        // =================================================  
+        // NAMA  
+        // =================================================  
+  
+        if (  
+          !nama.value.trim()  
+        ) {  
+  
+          showMessage(  
+            "error",  
+            "Nama wajib diisi."  
+          );  
+  
+          nama.focus();  
+  
+          return;  
+  
+        }  
+  
+  
+        // =================================================  
+        // POSITION  
+        // =================================================  
+  
+        if (  
+          !position.value  
+        ) {  
+  
+          showMessage(  
+            "error",  
+            "Silahkan pilih Position."  
+          );  
+  
+          position.focus();  
+  
+          return;  
+  
+        }  
+  
+  
+        // =================================================  
+        // NIK  
+        // =================================================  
+  
+        if (  
+          position.value ===  
+          "Ranch Market" &&  
+          !nik.value.trim()  
+        ) {  
+  
+          showMessage(  
+            "error",  
+            "NIK wajib diisi untuk Ranch Market."  
+          );  
+  
+          nik.focus();  
+  
+          return;  
+  
+        }  
+  
+  
+        // =================================================  
+        // BERSEDIA  
+        // =================================================  
+  
+        if (  
+          !ikut.value  
+        ) {  
+  
+          showMessage(  
+            "error",  
+            "Silakan pilih kesediaan mengikuti outing."  
+          );  
+  
+          ikut.focus();  
+  
+          return;  
+  
+        }  
+  
+  
+        // =================================================  
+        // BIKIN BAJU  
+        // =================================================  
+  
+        if (  
+          !bikinBaju.value  
+        ) {  
+  
+          showMessage(  
+            "error",  
+            "Silakan pilih Bikin Baju."  
+          );  
+  
+          bikinBaju.focus();  
+  
+          return;  
+  
+        }  
+  
+  
+        // =================================================  
+        // UKURAN  
+        // =================================================  
+  
+        if (  
+          bikinBaju.value ===  
+          "Iya" &&  
+          !ukuranBaju.value  
+        ) {  
+  
+          showMessage(  
+            "error",  
+            "Silakan pilih ukuran baju."  
+          );  
+  
+          ukuranBaju.focus();  
+  
+          return;  
+  
+        }  
+  
+  
+        // =================================================  
+        // DATA  
+        // =================================================  
+  
+        const data =  
+          new URLSearchParams();  
+  
+  
+        data.append(  
+          "nama",  
+          nama.value.trim()  
+        );  
+  
+  
+        data.append(  
+          "position",  
+          position.value  
+        );  
+  
+  
+        data.append(  
+          "nik",  
+          nik.value.trim()  
+        );  
+  
+  
+        data.append(  
+          "ikut",  
+          ikut.value  
+        );  
+  
+  
+        data.append(  
+          "bikinBaju",  
+          bikinBaju.value  
+        );  
+  
+  
+        data.append(  
+          "ukuranBaju",  
+          bikinBaju.value ===  
+          "Tidak"  
+            ? "Tidak"  
+            : ukuranBaju.value  
+        );  
+  
+  
+        // =================================================  
+        // LOADING  
+        // =================================================  
+  
+        submitButton.disabled =  
+          true;  
+  
+  
+        submitText.classList.add(  
+          "hidden"  
+        );  
+  
+  
+        loading.classList.remove(  
+          "hidden"  
+        );  
+  
+  
+        // =================================================  
+        // KIRIM DATA  
+        // =================================================  
+  
+        try {  
+  
+          await fetch(  
+            API_URL,  
+            {  
+  
+              method:  
+                "POST",  
+  
+              mode:  
+                "no-cors",  
+  
+              headers: {  
+  
+                "Content-Type":  
+                  "application/x-www-form-urlencoded"  
+  
+              },  
+  
+              body:  
+                data.toString()  
+  
+            }  
+          );  
+  
+  
+          showMessage(  
+            "success",  
+            "✓ Data berhasil dikirim. Terima kasih sudah mendaftar!"  
+          );  
+  
+  
+          // =================================================  
+          // RESET FORM  
+          // =================================================  
+  
+          form.reset();  
+  
+  
+          nikGroup.classList.add(  
+            "hidden"  
+          );  
+  
+  
+          nik.disabled =  
+            false;  
+  
+  
+          nik.required =  
+            false;  
+  
+  
+          ukuranGroup.classList.add(  
+            "hidden"  
+          );  
+  
+  
+          ukuranBaju.required =  
+            false;  
+  
+  
+        }  
+  
+        catch (error) {  
+  
+          console.error(  
+            error  
+          );  
+  
+  
+          showMessage(  
+            "error",  
+            "Data gagal dikirim. Silakan coba lagi."  
+          );  
+  
+        }  
+  
+  
+        // =================================================  
+        // STOP LOADING  
+        // =================================================  
+  
+        submitButton.disabled =  
+          false;  
+  
+  
+        submitText.classList.remove(  
+          "hidden"  
+        );  
+  
+  
+        loading.classList.add(  
+          "hidden"  
+        );  
+  
+      }  
+    );  
+  
+  
+    // =================================================  
+    // MESSAGE  
+    // =================================================  
+  
+    function showMessage(  
+      type,  
+      text  
+    ) {  
+  
+      message.className =  
+        "message " + type;  
+  
+  
+      message.textContent =  
+        text;  
+  
+    }  
+  
+  
+    function clearMessage() {  
+  
+      message.className =  
+        "message";  
+  
+  
+      message.textContent =  
+        "";  
+  
+    }  
+  
+  </script>  
+  
+  
+</body>  
+  
+</html>  
+  
