@@ -115,24 +115,33 @@
     ================================================= */
 
     .header {
+  background: rgba(255, 255, 255, 0.06);
 
-  background:
-    rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 
-  backdrop-filter:
-    blur(4px);
-
-  -webkit-backdrop-filter:
-    blur(4px);
-
-  border:
-    1px solid
-    rgba(255, 255, 255, 0.30);
+  border: 1px solid rgba(255, 255, 255, 0.25);
 
   box-shadow:
-    0 8px 25px
-    rgba(0, 0, 0, 0.12);
+    0 8px 30px rgba(0, 0, 0, 0.10);
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 25px 20px;
+
+  border-radius: 18px;
 }
+    
+.header-text {
+  width: 100%;
+  text-align: center;
+}
+    
     
 .logo-circle img {
   width: 100%;
@@ -179,7 +188,7 @@
 
       font-size: 13px;
 
-      color: #666;
+      color: #black;
 
     }
 
@@ -530,24 +539,30 @@
     ================================================= */
 
    .footer {
+  background: rgba(255, 255, 255, 0.06);
 
-  background:
-    rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 
-  backdrop-filter:
-    blur(4px);
-
-  -webkit-backdrop-filter:
-    blur(4px);
-
-  border:
-    1px solid
-    rgba(255, 255, 255, 0.30);
+  border: 1px solid rgba(255, 255, 255, 0.25);
 
   box-shadow:
-    0 12px 35px
-    rgba(0, 0, 0, 0.12);
+    0 8px 30px rgba(0, 0, 0, 0.10);
+
+  text-align: center;
+
+  padding: 18px;
+
+  border-radius: 18px;
+
+  color: #444;
+
+  font-size: 12px;
 }
+
+.footer p + p {
+  margin-top: 5px;
+}    
 
 
     /* =================================================
@@ -818,7 +833,7 @@
 
         <div class="logo-circle">
   <img
-    src="lIMG-20260809-WA0001.jpg"
+    src="IMG-20260809-WA0001.jpg"
     alt="Logo Ranch Market"
   >
 </div>
