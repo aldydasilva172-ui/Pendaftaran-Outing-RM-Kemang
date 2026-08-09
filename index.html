@@ -22,49 +22,105 @@
     }
 
 
+    /* =================================================
+       BODY - BACKGROUND FOTO FULL
+    ================================================= */
+
     body {
+
       font-family:
         Arial,
         Helvetica,
         sans-serif;
 
-      background:
-        linear-gradient(
-          135deg,
-          #f5f7f9 0%,
-          #eef1f4 100%
-        );
+      min-height: 100vh;
 
       color: #222;
+
+      background-image:
+        linear-gradient(
+          rgba(0, 0, 0, 0.28),
+          rgba(0, 0, 0, 0.28)
+        ),
+        url("IMG-20260809-WA0001.jpg");
+
+      background-size: cover;
+
+      background-position: center center;
+
+      background-repeat: no-repeat;
+
+      background-attachment: fixed;
+
     }
 
 
+    /* =================================================
+       PAGE
+    ================================================= */
+
     .page {
+
       min-height: 100vh;
 
-      padding: 30px 15px;
+      padding:
+        30px 15px;
+
+      display: flex;
+
+      justify-content: center;
+
     }
 
 
     .container {
+
       width: 100%;
 
       max-width: 520px;
 
       margin: auto;
+
     }
 
 
-    /* =========================
+    /* =================================================
+       GLASS EFFECT
+    ================================================= */
+
+    .glass {
+
+      background:
+        rgba(255, 255, 255, 0.78);
+
+      backdrop-filter:
+        blur(14px);
+
+      -webkit-backdrop-filter:
+        blur(14px);
+
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.65);
+
+      box-shadow:
+        0 12px 40px
+        rgba(0, 0, 0, 0.18);
+
+    }
+
+
+    /* =================================================
        HEADER
-    ========================= */
+    ================================================= */
 
     .header {
-      background: #ffffff;
 
-      border-radius: 24px 24px 0 0;
+      border-radius:
+        24px 24px 0 0;
 
-      padding: 28px 25px;
+      padding:
+        28px 25px;
 
       display: flex;
 
@@ -72,12 +128,36 @@
 
       gap: 18px;
 
+      background:
+        rgba(255, 255, 255, 0.78);
+
+      backdrop-filter:
+        blur(14px);
+
+      -webkit-backdrop-filter:
+        blur(14px);
+
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.7);
+
+      border-bottom:
+        1px solid
+        rgba(255, 255, 255, 0.45);
+
       box-shadow:
-        0 8px 25px rgba(0,0,0,0.06);
+        0 8px 25px
+        rgba(0, 0, 0, 0.12);
+
     }
 
 
+    /* =================================================
+       LOGO
+    ================================================= */
+
     .logo-circle {
+
       width: 62px;
 
       height: 62px;
@@ -104,61 +184,95 @@
           #111111,
           #3c3c3c
         );
+
+      box-shadow:
+        0 5px 15px
+        rgba(0, 0, 0, 0.25);
+
     }
 
 
     .small-title {
+
       font-size: 11px;
 
       font-weight: 700;
 
       letter-spacing: 1.5px;
 
-      color: #777;
+      color: #555;
 
       margin-bottom: 5px;
+
     }
 
 
     .header h1 {
+
       font-size: 23px;
 
       line-height: 1.2;
 
       letter-spacing: 0.3px;
+
+      color: #111;
+
     }
 
 
     .header p {
+
       margin-top: 7px;
 
       font-size: 13px;
 
-      color: #777;
+      color: #666;
+
     }
 
 
-    /* =========================
+    /* =================================================
        FORM
-    ========================= */
+    ================================================= */
 
     .form-card {
-      background: #ffffff;
 
       padding:
         28px 25px 30px;
 
+      background:
+        rgba(255, 255, 255, 0.72);
+
+      backdrop-filter:
+        blur(16px);
+
+      -webkit-backdrop-filter:
+        blur(16px);
+
+      border-left:
+        1px solid
+        rgba(255, 255, 255, 0.65);
+
+      border-right:
+        1px solid
+        rgba(255, 255, 255, 0.65);
+
       box-shadow:
-        0 12px 35px rgba(0,0,0,0.07);
+        0 12px 35px
+        rgba(0, 0, 0, 0.12);
+
     }
 
 
     .form-group {
+
       margin-bottom: 21px;
+
     }
 
 
     .form-group label {
+
       display: block;
 
       font-size: 14px;
@@ -167,70 +281,98 @@
 
       margin-bottom: 8px;
 
-      color: #303030;
+      color: #252525;
+
     }
 
 
     .form-group label span {
+
       color: #d71920;
+
     }
 
 
+    /* =================================================
+       INPUT & SELECT
+    ================================================= */
+
     input,
     select {
+
       width: 100%;
 
       height: 49px;
 
       border:
-        1px solid #dfe2e5;
+        1px solid
+        rgba(0, 0, 0, 0.12);
 
       border-radius: 12px;
 
-      padding: 0 15px;
+      padding:
+        0 15px;
 
       font-size: 14px;
 
       outline: none;
 
-      background: #ffffff;
+      background:
+        rgba(255, 255, 255, 0.82);
+
+      color: #222;
 
       transition:
         border 0.2s,
-        box-shadow 0.2s;
+        box-shadow 0.2s,
+        background 0.2s;
+
     }
 
 
     input:focus,
     select:focus {
+
       border-color: #222;
+
+      background:
+        rgba(255, 255, 255, 0.96);
 
       box-shadow:
         0 0 0 3px
-        rgba(0,0,0,0.06);
+        rgba(0, 0, 0, 0.08);
+
     }
 
 
     input::placeholder {
-      color: #a4a4a4;
+
+      color: #999;
+
     }
 
 
     input:disabled {
-      background: #f3f4f5;
+
+      background:
+        rgba(235, 235, 235, 0.75);
 
       color: #777;
 
       cursor: not-allowed;
+
     }
 
 
     .select-wrapper {
+
       position: relative;
+
     }
 
 
     .select-wrapper::after {
+
       content: "⌄";
 
       position: absolute;
@@ -244,10 +386,12 @@
       pointer-events: none;
 
       color: #555;
+
     }
 
 
     .select-wrapper select {
+
       appearance: none;
 
       -webkit-appearance: none;
@@ -255,26 +399,30 @@
       padding-right: 45px;
 
       cursor: pointer;
+
     }
 
 
     small {
+
       display: block;
 
       margin-top: 7px;
 
-      color: #8b8b8b;
+      color: #666;
 
       font-size: 11px;
+
     }
 
 
-    /* =========================
+    /* =================================================
        BUTTON
-    ========================= */
+    ================================================= */
 
     .mockup-button,
     .submit-button {
+
       width: 100%;
 
       height: 51px;
@@ -291,61 +439,97 @@
 
       transition:
         transform 0.15s,
-        opacity 0.2s;
+        opacity 0.2s,
+        background 0.2s;
+
     }
 
 
     .mockup-button:active,
     .submit-button:active {
-      transform: scale(0.98);
+
+      transform:
+        scale(0.98);
+
     }
 
 
     .mockup-button {
-      background: #f2f3f4;
+
+      background:
+        rgba(255, 255, 255, 0.65);
 
       color: #222;
 
       margin-bottom: 12px;
+
+      border:
+        1px solid
+        rgba(0, 0, 0, 0.08);
+
+      backdrop-filter:
+        blur(10px);
+
+      -webkit-backdrop-filter:
+        blur(10px);
+
     }
 
 
     .mockup-button:hover {
-      background: #e8e9eb;
+
+      background:
+        rgba(255, 255, 255, 0.9);
+
     }
 
 
     .shirt-icon {
+
       margin-right: 6px;
 
       font-size: 17px;
+
     }
 
 
     .submit-button {
-      background: #111111;
+
+      background:
+        rgba(17, 17, 17, 0.94);
 
       color: #ffffff;
+
+      box-shadow:
+        0 6px 15px
+        rgba(0, 0, 0, 0.18);
+
     }
 
 
     .submit-button:hover {
-      background: #292929;
+
+      background:
+        #292929;
+
     }
 
 
     .submit-button:disabled {
+
       opacity: 0.6;
 
       cursor: not-allowed;
+
     }
 
 
-    /* =========================
+    /* =================================================
        MESSAGE
-    ========================= */
+    ================================================= */
 
     .message {
+
       margin-top: 15px;
 
       padding: 12px;
@@ -357,33 +541,47 @@
       text-align: center;
 
       display: none;
+
     }
 
 
     .message.success {
+
       display: block;
 
-      background: #e9f8ef;
+      background:
+        rgba(233, 248, 239, 0.9);
 
       color: #16743a;
+
+      border:
+        1px solid
+        rgba(22, 116, 58, 0.15);
+
     }
 
 
     .message.error {
+
       display: block;
 
-      background: #fff0f0;
+      background:
+        rgba(255, 240, 240, 0.9);
 
       color: #b42318;
+
+      border:
+        1px solid
+        rgba(180, 35, 24, 0.15);
+
     }
 
 
-    /* =========================
+    /* =================================================
        FOOTER
-    ========================= */
+    ================================================= */
 
     .footer {
-      background: #ffffff;
 
       border-radius:
         0 0 24px 24px;
@@ -392,31 +590,53 @@
 
       text-align: center;
 
-      color: #999;
+      color: #555;
 
       font-size: 11px;
 
       line-height: 1.8;
 
+      background:
+        rgba(255, 255, 255, 0.72);
+
+      backdrop-filter:
+        blur(14px);
+
+      -webkit-backdrop-filter:
+        blur(14px);
+
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.65);
+
+      border-top:
+        1px solid
+        rgba(255, 255, 255, 0.45);
+
       box-shadow:
-        0 12px 35px rgba(0,0,0,0.07);
+        0 12px 35px
+        rgba(0, 0, 0, 0.12);
+
     }
 
 
-    /* =========================
+    /* =================================================
        HIDDEN
-    ========================= */
+    ================================================= */
 
     .hidden {
+
       display: none !important;
+
     }
 
 
-    /* =========================
-       MODAL MOCKUP
-    ========================= */
+    /* =================================================
+       MODAL
+    ================================================= */
 
     .modal {
+
       position: fixed;
 
       inset: 0;
@@ -430,25 +650,42 @@
       justify-content: center;
 
       padding: 20px;
+
     }
 
 
     .modal-overlay {
+
       position: absolute;
 
       inset: 0;
 
       background:
-        rgba(0,0,0,0.72);
+        rgba(0, 0, 0, 0.72);
+
+      backdrop-filter:
+        blur(5px);
+
+      -webkit-backdrop-filter:
+        blur(5px);
+
     }
 
 
     .modal-content {
+
       position: relative;
 
       z-index: 2;
 
-      background: #ffffff;
+      background:
+        rgba(255, 255, 255, 0.92);
+
+      backdrop-filter:
+        blur(16px);
+
+      -webkit-backdrop-filter:
+        blur(16px);
 
       width: 100%;
 
@@ -462,19 +699,31 @@
 
       padding: 22px;
 
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.8);
+
+      box-shadow:
+        0 20px 60px
+        rgba(0, 0, 0, 0.3);
+
       animation:
         modalShow 0.2s ease;
+
     }
 
 
     .modal-content h2 {
+
       font-size: 19px;
 
       margin-bottom: 15px;
+
     }
 
 
     .close-button {
+
       position: absolute;
 
       top: 12px;
@@ -496,10 +745,12 @@
       cursor: pointer;
 
       line-height: 30px;
+
     }
 
 
     .mockup-image-wrapper {
+
       width: 100%;
 
       border-radius: 12px;
@@ -507,58 +758,80 @@
       overflow: hidden;
 
       background: #f5f5f5;
+
     }
 
 
     .mockup-image-wrapper img {
+
       display: block;
 
       width: 100%;
 
       height: auto;
+
     }
 
 
     @keyframes modalShow {
 
       from {
+
         opacity: 0;
 
         transform:
           translateY(15px)
           scale(0.97);
+
       }
 
       to {
+
         opacity: 1;
 
         transform:
           translateY(0)
           scale(1);
+
       }
 
     }
 
 
-    /* =========================
+    /* =================================================
        MOBILE
-    ========================= */
+    ================================================= */
 
     @media (max-width: 480px) {
 
+      body {
+
+        background-attachment:
+          scroll;
+
+      }
+
+
       .page {
-        padding: 10px;
+
+        padding:
+          10px;
+
       }
 
 
       .header {
-        padding: 22px 18px;
+
+        padding:
+          22px 18px;
 
         gap: 13px;
+
       }
 
 
       .logo-circle {
+
         width: 53px;
 
         height: 53px;
@@ -566,27 +839,36 @@
         min-width: 53px;
 
         font-size: 17px;
+
       }
 
 
       .header h1 {
+
         font-size: 19px;
+
       }
 
 
       .header p {
+
         font-size: 11px;
+
       }
 
 
       .form-card {
+
         padding:
           25px 18px;
+
       }
 
 
       .footer {
+
         padding: 17px;
+
       }
 
     }
@@ -604,7 +886,9 @@
     <div class="container">
 
 
-      <!-- HEADER -->
+      <!-- =================================================
+           HEADER
+      ================================================= -->
 
       <div class="header">
 
@@ -635,7 +919,9 @@
 
 
 
-      <!-- FORM -->
+      <!-- =================================================
+           FORM
+      ================================================= -->
 
       <div class="form-card">
 
@@ -913,7 +1199,7 @@
             id="mockupButton"
           >
 
-            <span class="shirt-icon">
+            <span class="IMG-20260809-WA0000.jpg">
               👕
             </span>
 
@@ -958,7 +1244,9 @@
 
 
 
-      <!-- FOOTER -->
+      <!-- =================================================
+           FOOTER
+      ================================================= -->
 
       <div class="footer">
 
@@ -980,7 +1268,9 @@
 
 
 
-  <!-- MODAL MOCKUP -->
+  <!-- =================================================
+       MODAL MOCKUP
+  ================================================= -->
 
   <div
     class="modal hidden"
@@ -1030,12 +1320,10 @@
 
     // =================================================
     // GOOGLE APPS SCRIPT
-    // GANTI URL DI BAWAH INI
     // =================================================
 
     const API_URL =
       "https://script.google.com/macros/s/AKfycbyULwRXWwwX37FeOTRXyB80DAVHK2BRFujvdNLZskvPLxA4up9MEO3fTSqWGxId3mQo6g/exec";
-
 
 
     // =================================================
@@ -1150,7 +1438,6 @@
       );
 
 
-
     // =================================================
     // POSITION
     // =================================================
@@ -1167,9 +1454,6 @@
           value ===
           "Ranch Market"
         ) {
-
-          // Ranch Market
-          // wajib isi NIK
 
           nikGroup.classList.remove(
             "hidden"
@@ -1201,9 +1485,6 @@
         else if (
           value !== ""
         ) {
-
-          // Selain Ranch Market
-          // otomatis isi sesuai position
 
           nikGroup.classList.remove(
             "hidden"
@@ -1256,7 +1537,6 @@
     );
 
 
-
     // =================================================
     // BIKIN BAJU
     // =================================================
@@ -1303,7 +1583,6 @@
     );
 
 
-
     // =================================================
     // MOCKUP
     // =================================================
@@ -1344,7 +1623,6 @@
     );
 
 
-
     // =================================================
     // SUBMIT
     // =================================================
@@ -1359,8 +1637,9 @@
         clearMessage();
 
 
-
-        // Cek URL
+        // =================================================
+        // CEK URL
+        // =================================================
 
         if (
           !API_URL ||
@@ -1378,8 +1657,9 @@
         }
 
 
-
-        // Nama
+        // =================================================
+        // NAMA
+        // =================================================
 
         if (
           !nama.value.trim()
@@ -1397,8 +1677,9 @@
         }
 
 
-
-        // Position
+        // =================================================
+        // POSITION
+        // =================================================
 
         if (
           !position.value
@@ -1416,8 +1697,9 @@
         }
 
 
-
+        // =================================================
         // NIK
+        // =================================================
 
         if (
           position.value ===
@@ -1437,8 +1719,9 @@
         }
 
 
-
-        // Bersedia
+        // =================================================
+        // BERSEDIA
+        // =================================================
 
         if (
           !ikut.value
@@ -1456,8 +1739,9 @@
         }
 
 
-
-        // Bikin Baju
+        // =================================================
+        // BIKIN BAJU
+        // =================================================
 
         if (
           !bikinBaju.value
@@ -1475,8 +1759,9 @@
         }
 
 
-
-        // Ukuran
+        // =================================================
+        // UKURAN
+        // =================================================
 
         if (
           bikinBaju.value ===
@@ -1494,7 +1779,6 @@
           return;
 
         }
-
 
 
         // =================================================
@@ -1544,7 +1828,6 @@
         );
 
 
-
         // =================================================
         // LOADING
         // =================================================
@@ -1563,6 +1846,9 @@
         );
 
 
+        // =================================================
+        // KIRIM DATA
+        // =================================================
 
         try {
 
@@ -1570,13 +1856,17 @@
             API_URL,
             {
 
-              method: "POST",
+              method:
+                "POST",
 
-              mode: "no-cors",
+              mode:
+                "no-cors",
 
               headers: {
+
                 "Content-Type":
                   "application/x-www-form-urlencoded"
+
               },
 
               body:
@@ -1592,7 +1882,9 @@
           );
 
 
-          // Reset
+          // =================================================
+          // RESET FORM
+          // =================================================
 
           form.reset();
 
@@ -1619,7 +1911,6 @@
             false;
 
 
-
         }
 
         catch (error) {
@@ -1637,6 +1928,9 @@
         }
 
 
+        // =================================================
+        // STOP LOADING
+        // =================================================
 
         submitButton.disabled =
           false;
@@ -1653,7 +1947,6 @@
 
       }
     );
-
 
 
     // =================================================
