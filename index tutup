@@ -1,1 +1,734 @@
-q
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Pendaftaran Outing RM Kemang</title>
+
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    /* =================================================
+       BODY - BACKGROUND FOTO FULL
+    ================================================= */
+
+    body {
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      min-height: 100vh;
+
+      color: #222;
+
+      background-image:
+        linear-gradient(
+          rgba(0, 0, 0, 0.08),
+          rgba(0, 0, 0, 0.08)
+        ),
+        url("IMG-20260809-WA0001.jpg");
+
+      background-size: cover;
+
+      background-position: center center;
+
+      background-repeat: no-repeat;
+
+      background-attachment: fixed;
+
+    }
+
+
+    /* =================================================
+       PAGE
+    ================================================= */
+
+    .page {
+
+      min-height: 100vh;
+
+      padding:
+        30px 15px;
+
+      display: flex;
+
+      justify-content: center;
+
+      align-items: center;
+
+    }
+
+
+    .container {
+
+      width: 100%;
+
+      max-width: 520px;
+
+      margin: auto;
+
+    }
+
+
+    /* =================================================
+       SATU KACA BESAR
+       HEADER + STATUS + FOOTER MENYATU
+    ================================================= */
+
+    .glass-container {
+
+      width: 100%;
+
+      background:
+        rgba(255, 255, 255, 0.08);
+
+      backdrop-filter:
+        blur(3px);
+
+      -webkit-backdrop-filter:
+        blur(3px);
+
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.30);
+
+      border-radius:
+        28px;
+
+      overflow:
+        hidden;
+
+      box-shadow:
+
+        0 20px 50px
+        rgba(0, 0, 0, 0.18),
+
+        inset 0 1px 0
+        rgba(255, 255, 255, 0.35);
+
+    }
+
+
+    /* =================================================
+       HEADER
+    ================================================= */
+
+    .header {
+
+      padding:
+        22px;
+
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      gap:
+        15px;
+
+      background:
+        transparent;
+
+      border:
+        none;
+
+      border-bottom:
+        1px solid
+        rgba(255, 255, 255, 0.18);
+
+    }
+
+
+    .logo-circle {
+
+      width:
+        65px;
+
+      height:
+        65px;
+
+      min-width:
+        65px;
+
+      border-radius:
+        50%;
+
+      overflow:
+        hidden;
+
+      background:
+        rgba(255, 255, 255, 0.18);
+
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.35);
+
+      box-shadow:
+        0 4px 15px
+        rgba(0, 0, 0, 0.12);
+
+    }
+
+
+    .logo-circle img {
+
+      width:
+        100%;
+
+      height:
+        100%;
+
+      object-fit:
+        contain;
+
+      border-radius:
+        50%;
+
+      display:
+        block;
+
+    }
+
+
+    .header h1 {
+
+      font-size:
+        23px;
+
+      line-height:
+        1.2;
+
+      letter-spacing:
+        0.3px;
+
+      color:
+        #000;
+
+      text-shadow:
+
+        0 0 2px
+        rgba(255,255,255,0.9),
+
+        0 0 5px
+        rgba(255,255,255,0.8),
+
+        0 0 8px
+        rgba(255,255,255,0.5);
+
+    }
+
+
+    .header p {
+
+      margin-top:
+        7px;
+
+      font-size:
+        16px;
+
+      color:
+        #000;
+
+      text-shadow:
+
+        0 0 2px
+        rgba(255,255,255,0.9),
+
+        0 0 5px
+        rgba(255,255,255,0.8),
+
+        0 0 8px
+        rgba(255,255,255,0.5);
+
+    }
+
+
+    /* =================================================
+       STATUS PENDAFTARAN DITUTUP
+    ================================================= */
+
+    .closed-card {
+
+      padding:
+        45px 25px 50px;
+
+      text-align:
+        center;
+
+    }
+
+
+    .closed-icon {
+
+      width:
+        78px;
+
+      height:
+        78px;
+
+      margin:
+        0 auto 20px;
+
+      border-radius:
+        50%;
+
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      justify-content:
+        center;
+
+      font-size:
+        36px;
+
+      background:
+        rgba(255, 255, 255, 0.45);
+
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.65);
+
+      box-shadow:
+
+        0 8px 25px
+        rgba(0, 0, 0, 0.15),
+
+        inset 0 1px 0
+        rgba(255, 255, 255, 0.7);
+
+      backdrop-filter:
+        blur(8px);
+
+      -webkit-backdrop-filter:
+        blur(8px);
+
+    }
+
+
+    .closed-card h2 {
+
+      font-size:
+        25px;
+
+      line-height:
+        1.3;
+
+      color:
+        #000;
+
+      margin-bottom:
+        13px;
+
+      text-shadow:
+
+        0 0 2px
+        rgba(255,255,255,0.95),
+
+        0 0 5px
+        rgba(255,255,255,0.85),
+
+        0 0 10px
+        rgba(255,255,255,0.55);
+
+    }
+
+
+    .closed-card .main-text {
+
+      font-size:
+        15px;
+
+      font-weight:
+        700;
+
+      color:
+        #222;
+
+      line-height:
+        1.6;
+
+      margin-bottom:
+        8px;
+
+      text-shadow:
+
+        0 0 2px
+        rgba(255,255,255,0.9),
+
+        0 0 5px
+        rgba(255,255,255,0.7);
+
+    }
+
+
+    .closed-card .sub-text {
+
+      font-size:
+        13px;
+
+      color:
+        #333;
+
+      line-height:
+        1.6;
+
+      max-width:
+        390px;
+
+      margin:
+        0 auto;
+
+      text-shadow:
+
+        0 0 2px
+        rgba(255,255,255,0.9),
+
+        0 0 5px
+        rgba(255,255,255,0.7);
+
+    }
+
+
+    .closed-line {
+
+      width:
+        70px;
+
+      height:
+        3px;
+
+      margin:
+        25px auto 0;
+
+      border-radius:
+        10px;
+
+      background:
+        rgba(0, 0, 0, 0.65);
+
+    }
+
+
+    /* =================================================
+       FOOTER
+    ================================================= */
+
+    .footer {
+
+      padding:
+        18px 22px;
+
+      text-align:
+        center;
+
+      background:
+        transparent;
+
+      border:
+        none;
+
+      border-top:
+        1px solid
+        rgba(255, 255, 255, 0.18);
+
+      box-shadow:
+        none;
+
+    }
+
+
+    .footer p {
+
+      font-size:
+        11px;
+
+      color:
+        #000;
+
+      line-height:
+        1.6;
+
+      text-shadow:
+
+        0 0 2px
+        rgba(255,255,255,0.8);
+
+    }
+
+
+    /* =================================================
+       MOBILE
+    ================================================= */
+
+    @media (max-width: 480px) {
+
+      body {
+
+        background-attachment:
+          scroll;
+
+      }
+
+
+      .page {
+
+        padding:
+          10px;
+
+      }
+
+
+      .glass-container {
+
+        border-radius:
+          24px;
+
+      }
+
+
+      .header {
+
+        padding:
+          20px 17px;
+
+        gap:
+          13px;
+
+      }
+
+
+      .logo-circle {
+
+        width:
+          58px;
+
+        height:
+          58px;
+
+        min-width:
+          58px;
+
+      }
+
+
+      .header h1 {
+
+        font-size:
+          20px;
+
+      }
+
+
+      .header p {
+
+        font-size:
+          11px;
+
+      }
+
+
+      .closed-card {
+
+        padding:
+          40px 20px 45px;
+
+      }
+
+
+      .closed-icon {
+
+        width:
+          70px;
+
+        height:
+          70px;
+
+        font-size:
+          32px;
+
+      }
+
+
+      .closed-card h2 {
+
+        font-size:
+          22px;
+
+      }
+
+
+      .closed-card .main-text {
+
+        font-size:
+          14px;
+
+      }
+
+
+      .closed-card .sub-text {
+
+        font-size:
+          12px;
+
+      }
+
+
+      .footer {
+
+        padding:
+          17px;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <div class="page">
+
+
+    <div class="container">
+
+
+      <!-- =================================================
+           SATU KACA BESAR
+           HEADER + STATUS + FOOTER
+      ================================================= -->
+
+      <div class="glass-container">
+
+
+        <!-- =================================================
+             HEADER
+        ================================================= -->
+
+        <div class="header">
+
+
+          <div class="logo-circle">
+
+            <img
+              src="IMG-20260809-WA0004.jpg"
+              alt="Logo Ranch Market"
+            >
+
+          </div>
+
+
+          <div class="header-text">
+
+
+            <h1>
+              PENDAFTARAN OUTING
+            </h1>
+
+
+            <p>
+              Ranch Market Kemang
+            </p>
+
+
+          </div>
+
+        </div>
+
+
+        <!-- =================================================
+             PENDAFTARAN DITUTUP
+        ================================================= -->
+
+        <div class="closed-card">
+
+
+          <div class="closed-icon">
+
+            🔒
+
+          </div>
+
+
+          <h2>
+            PENDAFTARAN SEMENTARA DITUTUP
+          </h2>
+
+
+          <p class="main-text">
+
+            Mohon maaf, pendaftaran outing
+            saat ini sementara ditutup.
+
+          </p>
+
+
+          <p class="sub-text">
+
+            Silakan kembali lagi nanti, untuk
+            mendapatkan informasi mengenai
+            pendaftaran hubungi panitia outing,
+terimakasih.
+
+          </p>
+
+
+          <div class="closed-line"></div>
+
+
+        </div>
+
+
+        <!-- =================================================
+             FOOTER
+        ================================================= -->
+
+        <div class="footer">
+
+
+          <p>
+            © 2026 Ranch Market Kemang
+          </p>
+
+
+          <p>
+            Data pendaftaran outing
+          </p>
+
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>
